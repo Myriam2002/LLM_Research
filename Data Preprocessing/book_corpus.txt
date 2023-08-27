@@ -1,0 +1,367 @@
+{### Table of contents:contents
+1■Data science in a big data world 1
+2■The data science process 22
+3■Machine learning 57
+4■Handling large data on a single computer 85
+5■First steps in big data 119
+6■Join the NoSQL movement 150
+7■The rise of graph databases 190
+8■Text mining and text analytics 218
+9■Data visualization to the end user 253viicontents
+preface xiii
+acknowledgments xiv
+about this book xviabout the authors xviii
+about the cover illustration xx
+1Data science in a big data world 1
+1.1 Benefits and uses of data science and big data 2
+1.2 Facets of data 4
+Structured data 4■Unstructured data 5
+Natural language 5■Machine-generated data 6
+Graph-based or network data 7■Audio, image, and video 8
+Streaming data 8
+1.3 The data science process 8
+Setting the research goal 8■Retrieving data 9
+Data preparation 9■Data exploration 9
+Data modeling or model building 9■Presentation 
+and automation 9
+1.4 The big data ecosystem and data science 10
+Distributed file systems 10■Distributed programming 
+framework 12■Data integration framework 12CONTENTS viii
+Machine learning frameworks 12■NoSQL databases 13
+Scheduling tools 14■Benchmarking tools 14
+System deployment 14■Service programming 14
+Security 14
+1.5 An introductory working example of Hadoop 15
+1.6 Summary 20
+2The data science process 22
+2.1 Overview of the data science process 22
+Don’t be a slave to the process 25
+2.2 Step 1: Defining research goals and creating 
+a project charter 25
+Spend time understanding the goals and context of your research 26
+Create a project charter 26
+2.3 Step 2: Retrieving data 27
+Start with data stored within the company 28■Don’t be afraid 
+to shop around 28■Do data quality checks now to prevent 
+problems later 29
+2.4 Step 3: Cleansing, integrating, and transforming data 29
+Cleansing data 30■Correct errors as early as possible 36
+Combining data from different data sources 37Transforming data 40
+2.5 Step 4: Exploratory data analysis 43
+2.6 Step 5: Build the models 48
+Model and variable selection 48■Model execution 49
+Model diagnostics and model comparison 54
+2.7 Step 6: Presenting findings and building applications on 
+top of them 55
+2.8 Summary 56
+3Machine learning 57
+3.1 What is machine learning and why should you care 
+about it? 58
+Applications for machine learning in data science 58
+Where machine learning is used in the data science process 59Python tools used in machine learning 60CONTENTS ix
+3.2 The modeling process 62
+Engineering features and selecting a model 62■Training 
+your model 64■Validating a model 64■Predicting 
+new observations 65
+3.3 Types of machine learning 65
+Supervised learning 66■Unsupervised learning 72
+3.4 Semi-supervised learning 82
+3.5 Summary 83
+4Handling large data on a single computer 85
+4.1 The problems you face when handling large data 864.2 General techniques for handling large volumes of data 87
+Choosing the right algorithm 88■Choosing the right data 
+structure 96■Selecting the right tools 99
+4.3 General programming tips for dealing with 
+large data sets 101
+Don’t reinvent the wheel 101■Get the most out of your 
+hardware 102■Reduce your computing needs 102
+4.4 Case study 1: Predicting malicious URLs 103
+Step 1: Defining the research goal 104■Step 2: Acquiring 
+the URL data 104■Step 4: Data exploration 105
+Step 5: Model building 106
+4.5 Case study 2: Building a recommender system inside 
+a database 108
+Tools and techniques needed 108■Step 1: Research 
+question 111■Step 3: Data preparation 111
+Step 5: Model building 115■Step 6: Presentation 
+and automation 116
+4.6 Summary 118
+5First steps in big data 119
+5.1 Distributing data stor age and processing with 
+frameworks 120
+Hadoop: a framework for storing and processing large data sets 121
+Spark: replacing MapReduce for better performance 123CONTENTS x
+5.2 Case study: Assessing risk when loaning money 125
+Step 1: The research goal 126■Step 2: Data retrieval 127
+Step 3: Data preparation 131■Step 4: Data exploration & 
+Step 6: Report building 135
+5.3 Summary 149
+6Join the NoSQL movement 150
+6.1 Introduction to NoSQL 153
+ACID: the core principle of relational databases 153
+CAP Theorem: the problem with DBs on many nodes 154The BASE principles of NoSQL databases 156NoSQL database types 158
+6.2 Case study: What disease is that? 164
+Step 1: Setting the research goal 166■Steps 2 and 3: Data 
+retrieval and preparation 167■Step 4: Data exploration 175
+Step 3 revisited: Data preparation for disease profiling 183Step 4 revisited: Data explor ation for disease profiling 187
+Step 6: Presentation and automation 188
+6.3 Summary 189
+7The rise of graph databases 190
+7.1 Introducing connected data and graph databases 191
+Why and when should I use a graph database? 193
+7.2 Introducing Neo4j: a graph database 196
+Cypher: a graph query language 198
+7.3 Connected data example: a recipe recommendation 
+engine 204
+Step 1: Setting the research goal 205■Step 2: Data retrieval 206
+Step 3: Data preparation 207■Step 4: Data exploration 210
+Step 5: Data modeling 212■Step 6: Presentation 216
+7.4 Summary 216
+8Text mining and text analytics 218
+8.1 Text mining in the real world 220
+8.2 Text mining techniques 225
+Bag of words 225■Stemming and lemmatization 227
+Decision tree classifier 228CONTENTS xi
+8.3 Case study: Classifying Reddit posts 230
+Meet the Natural Language Toolkit 231■Data science process 
+overview and step 1: The research goal 233■Step 2: Data 
+retrieval 234■Step 3: Data preparation 237■Step 4: 
+Data exploration 240■Step 3 revisited: Data preparation 
+adapted 242■Step 5: Data analysis 246■Step 6: 
+Presentation and automation 250
+8.4 Summary 252
+9Data visualization to the end user 253
+9.1 Data visualization options 254
+9.2 Crossfilter, the JavaScript MapReduce library 257
+Setting up everything 258■Unleashing Crossfilter to filter the 
+medicine data set 262
+9.3 Creating an interactive dashboard with dc.js 2679.4 Dashboard development tools 272
+9.5 Summary 273
+appendix A Setting up Elasticsearch 275
+appendix B Setting up Neo4j 281
+appendix C Installing MySQL server 284
+appendix D Setting up Anaconda with a virtual environment 288
+index 291xiiipreface
+It’s in all of us. Data science is what makes us humans what we are today. No, not the
+computer-driven data science this book will  introduce you to, but the ability of our
+brains to see connections, draw conclusions from facts, and learn from our past expe-
+riences. More so than any other species on  the planet, we depend on our brains for
+survival; we went all-in on these features to earn our place in nature. That strategy has
+worked out for us so far, and we’re unlik ely to change it in the near future. 
+ But our brains can only take us so far when it comes to raw computing. Our biol-
+ogy can’t keep up with the amounts of data we can capture now and with the extent of
+our curiosity. So we turn to machines to do part of the work for us: to recognize pat-
+terns, create connections, and supply us with answers to our numerous questions. 
+ The quest for knowledge is in our genes. Relying on computers to do part of the
+job for us is not—but it is our destiny. xivacknowledgments
+A big thank you to all the people of Manning  involved in the process of making this
+book for guiding us all the way through.
+ Our thanks also go to Ravishankar Raja gopalan for giving the manuscript a full
+technical proofread, and to Jonathan Th oms and Michael Roberts for their expert
+comments. There were many other reviewers who provided invaluable feedback
+throughout the process: Alvin Raj, Arthur Zubarev, Bill Martschenko, Craig Smith,
+Filip Pravica, Hamideh Iraj, Heather Campbe ll, Hector Cuesta, Ian Stirk, Jeff Smith,
+Joel Kotarski, Jonathan Sharley, Jörn Di nkla, Marius Butuc, Matt R. Cole, Matthew
+Heck, Meredith Godar, Rob Agle, Scott Chaussee, and Steve Rogers.
+First and foremost I want to thank my wife Filipa for being my inspiration and motiva-
+tion to beat all difficulties and for always  standing beside me throughout my career
+and the writing of this book. She has prov ided me the necessary time to pursue my
+goals and ambition, and shouldered all the bu rdens of taking care of our little daugh-
+ter in my absence. I dedicate this book to  her and really appreciate all the sacrifices
+she has made in order to build and maintain our little family.
+ I also want to thank my daughter Eva, an d my son to be born, who give me a great
+sense of joy and keep me smiling. They are the be st gifts that God ever gave to my life and
+also the best children a dad could hope for:  fun, loving, and always a joy to be with. 
+ A special thank you goes to my parents for their support over the years. Without
+the endless love and encouragement from my  family, I would not have been able to
+finish this book and continue the jo urney of achieving my goals in life. ACKNOWLEDGMENTS xv
+ I’d really like to thank all my coworkers in my company, especially Mo and Arno,
+for all the adventures we have been throug h together. Mo and Arno have provided me
+excellent support and advice. I appreciate al l of their time and effort in making this
+book complete. They are great people, an d without them, this book may not have
+been written.  
+ Finally, a sincere thank you to my friends who support me and understand that I
+do not have much time but I still count on  the love and support they have given me
+throughout my career and th e development of this book. 
+DAVY CIELEN
+I would like to give thanks to my family an d friends who have supported me all the way
+through the process of writing this book. It has not always been easy to stay at home
+writing, while I could be out discovering new things. I want to give very special thanks
+to my parents, my brother Jago, and my girl friend Delphine for always being there for
+me, regardless of what crazy plan s I come up with and execute. 
+ I would also like to thank my godmothe r, and my godfather whose current struggle
+with cancer puts everything in life into perspective again.
+ Thanks also go to my friends for buying me beer to distract me from my work and
+to Delphine’s parents, her brother Karel, and his soon-to-be wife Tess for their hospi-
+tality (and for stuffing me with good food). 
+ All of them have made a great cont ribution to a wonderful life so far.
+ Last but not least, I would like to thank my coauthor Mo, my ERC-homie, and my
+coauthor Davy for their insightful contribu tions to this book. I share the ups and
+downs of being an entrepreneur and data scientist with both of them on a daily basis.
+It has been a great trip so far. Let’s hope there are many more days to come.
+ARNO D. B. M EYSMAN
+First and foremost, I would like to thank my fiancée Muhuba for her love, understand-
+ing, caring, and patience. Finally, I owe much  to Davy and Arno for having fun and for
+making an entrepreneurial dream come true. Their unfailing dedication has been avital resource for the realization of this book.
+M
+OHAMED  ALIxviabout this book
+I can only show you the door. You’re the one that has to walk through it.
+Morpheus, The Matrix
+Welcome to the book! When reading the table of contents, you probably noticed
+the diversity of the topics we’re about to cover. The goal of Introducing Data Science
+is to provide you with a little bit of ever ything—enough to get you started. Data sci-
+ence is a very wide field, so wide indeed that a book ten times the size of this one
+wouldn’t be able to cover it all. For each  chapter, we picked a different aspect we
+find interesting. Some hard decisions had to be made to keep this book from col-
+lapsing your bookshelf!
+ W e hope it serves as an entry point— your doorway into the exciting world of
+data science. 
+Roadmap
+Chapters 1 and 2 offer the general theoretical background and framework necessaryto understand the rest of this book: 
+■}
+{### Table of contents:TABLE OF CONTENTS
+1. Probability of Events . . . . . . . . . . . . . . . . . . . 1
+1.1. Introduction
+1.2. Counting Techniques
+1.3. Probability Measure
+1.4. Some Properties of the Probability Measure
+1.5. Review Exercises
+2. Conditional Probability and Bayes’ Theorem . . . . . . . 27
+2.1. Conditional Probability
+2.2. Bayes’ Theorem
+2.3. Review Exercises
+3. Random Variables and Distribution Functions . . . . . . . 45
+3.1. Introduction
+3.2. Distribution Functions of Discrete Variables
+3.3. Distribution Functions of Continuous Variables
+3.4. Percentile for Continuous Random Variables
+3.5. Review Exercises
+4. Moments of Random Variables and Chebychev Inequality . 73
+4.1. Moments of Random Variables
+4.2. Expected Value of Random Variables
+4.3. Variance of Random Variables
+4.4. Chebychev Inequality
+4.5. Moment Generating Functions
+4.6. Review Exercisesxiii
+5. Some Special Discrete Distributions . . . . . . . . . . . 107
+5.1. Bernoulli Distribution
+5.2. Binomial Distribution
+5.3. Geometric Distribution
+5.4. Negative Binomial Distribution
+5.5. Hypergeometric Distribution
+5.6. Poisson Distribution
+5.7. Riemann Zeta Distribution
+5.8. Review Exercises
+6. Some Special Continuous Distributions . . . . . . . . . 141
+6.1. Uniform Distribution
+6.2. Gamma Distribution
+6.3. Beta Distribution
+6.4. Normal Distribution
+6.5. Lognormal Distribution
+6.6. Inverse Gaussian Distribution
+6.7. Logistic Distribution
+6.8. Review Exercises
+7. Two Random Variables . . . . . . . . . . . . . . . . . 185
+7.1. Bivariate Discrete Random Variables
+7.2. Bivariate Continuous Random Variables
+7.3. Conditional Distributions
+7.4. Independence of Random Variables
+7.5. Review Exercises
+8. Product Moments of Bivariate Random Variables . . . . 213
+8.1. Covariance of Bivariate Random Variables
+8.2. Independence of Random Variables
+8.3. Variance of the Linear Combination of Random Variables
+8.4. Correlation and Independence
+8.5. Moment Generating Functions
+8.6. Review Exercisesxiv
+9. Conditional Expectations of Bivariate Random Variables 237
+9.1. Conditional Expected Values
+9.2. Conditional Variance
+9.3. Regression Curve and Scedastic Curves
+9.4. Review Exercises
+10. Functions of Random Variables and Their Distribution . 257
+10.1. Distribution Function Method
+10.2. Transformation Method for Univariate Case
+10.3. Transformation Method for Bivariate Case
+10.4. Convolution Method for Sums of Random Variables
+10.5. Moment Method for Sums of Random Variables
+10.6. Review Exercises
+11. Some Special Discrete Bivariate Distributions . . . . . 289
+11.1. Bivariate Bernoulli Distribution
+11.2. Bivariate Binomial Distribution
+11.3. Bivariate Geometric Distribution
+11.4. Bivariate Negative Binomial Distribution
+11.5. Bivariate Hypergeometric Distribution
+11.6. Bivariate Poisson Distribution
+11.7. Review Exercises
+12. Some Special Continuous Bivariate Distributions . . . . 317
+12.1. Bivariate Uniform Distribution
+12.2. Bivariate Cauchy Distribution
+12.3. Bivariate Gamma Distribution
+12.4. Bivariate Beta Distribution
+12.5. Bivariate Normal Distribution
+12.6. Bivariate Logistic Distribution
+12.7. Review Exercisesxv
+13. Sequences of Random Variables and Order Statistics . . 353
+13.1. Distribution of Sample Mean and Variance
+13.2. Laws of Large Numbers
+13.3. The Central Limit Theorem
+13.4. Order Statistics
+13.5. Sample Percentiles
+13.6. Review Exercises
+14. Sampling Distributions Associated with
+the Normal Population . . . . . . . . . . . . . . . . . 395
+14.1. Chi-square distribution
+14.2. Student’s t-distribution
+14.3. Snedecor’s F-distribution
+14.4. Review Exercises
+15. Some Techniques for Finding Point
+Estimators of Parameters . . . . . . . . . . . . . . . 413
+15.1. Moment Method
+15.2. Maximum Likelihood Method
+15.3. Bayesian Method
+15.3. Review Exercises
+16. Criteria for Evaluating the Goodness
+of Estimators . . . . . . . . . . . . . . . . . . . . . 455
+16.1. The Unbiased Estimator
+16.2. The Relatively E ﬃcient Estimator
+16.3. The Minimum Variance Unbiased Estimator
+16.4. Su ﬃcient Estimator
+16.5. Consistent Estimator
+16.6. Review Exercisesxvi
+17. Some Techniques for Finding Interval
+Estimators of Parameters . . . . . . . . . . . . . . . 497
+17.1. Interval Estimators and Conﬁdence Intervals for Parameters
+17.2. Pivotal Quantity Method
+17.3. Conﬁdence Interval for Population Mean
+17.4. Conﬁdence Interval for Population Variance
+17.5. Conﬁdence Interval for Parameter of some Distributions
+not belonging to the Location-Scale Family
+17.6. Approximate Conﬁdence Interval for Parameter with MLE
+17.7. The Statistical or General Method
+17.8. Criteria for Evaluating Conﬁdence Intervals
+17.9. Review Exercises
+18. Test of Statistical Hypotheses . . . . . . . . . . . . . 541
+18.1. Introduction
+18.2. A Method of Finding Tests
+18.3. Methods of Evaluating Tests
+18.4. Some Examples of Likelihood Ratio Tests
+18.5. Review Exercises
+19. Simple Linear Regression and Correlation Analysis . . 585
+19.1. Least Squared Method
+19.2. Normal Regression Analysis
+19.3. The Correlation Analysis
+19.4. Review Exercises
+20. Analysis of Variance . . . . . . . . . . . . . . . . . . 621
+20.1. One-way Analysis of Variance with Equal Sample Sizes
+20.2. One-way Analysis of Variance with Unequal Sample Sizes
+20.3. Pair wise Comparisons
+20.4. Tests for the Homogeneity of Variances
+20.5. Review Exercisesxvii
+21. Goodness of Fits Tests . . . . . . . . . . . . . . . . . 653
+21.1. Chi-Squared test
+21.2. Kolmogorov-Smirnov test
+21.3. Review Exercises
+References . . . . . . . . . . . . . . . . . . . . . . . . . 671
+Answers to Selected Review Exercises . . . . . . . . . . . 677Probability and Mathematical Statistics 1
+}
