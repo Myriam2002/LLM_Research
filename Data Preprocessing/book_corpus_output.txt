@@ -1,0 +1,2186 @@
+{### Table of contents:contents is a large inventory of numerous topics relevant to DL 
+
+
+Introduction
+What makes this book so valuable
+What will I learn
+How to Work Problems
+Types of Problems
+II Kindergarten
+LOGISTIC REGRESSION
+Introduction
+Problems
+General Concepts
+Odds, Log-odds
+The Sigmoid
+Truly Understanding Logistic Regression
+The Logit Function and Entropy
+Python/PyTorch/CPP
+Solutions
+General Concepts
+Odds, Log-odds
+The Sigmoid
+Truly Understanding Logistic Regression
+The Logit Function and Entropy
+Python, PyTorch, CPP
+8PROBABILISTIC PROGRAMMING & BAYESIAN DL
+Introduction
+Problems
+Expectation and Variance
+Conditional Probability
+Bayes Rule
+Maximum Likelihood Estimation
+Fisher Information
+Posterior & prior predictive distributions
+Conjugate priors
+Bayesian Deep Learning
+Solutions
+Expectation and Variance
+Conditional Probability
+Bayes Rule
+Maximum Likelihood Estimation
+Fisher Information
+Posterior & prior predictive distributions
+Conjugate priors
+Bayesian Deep Learning
+III High School
+INFORMATION THEORY
+Introduction
+Problems
+Logarithms in Information Theory
+Shannon's Entropy
+Kullback-Leibler Divergence (KLD
+Classiﬁcation and Information Gain
+Mutual Information
+Mechanical Statistics
+Jensen's inequality
+Solutions
+Logarithms in Information Theory
+Shannon's Entropy 
+Kullback-Leibler Divergence
+Classiﬁcation and Information Gain
+Mutual Information
+Mechanical Statistics
+Jensen's inequality
+DEEP LEARNING: CALCULUS, ALGORITHMIC DIFFERENTIATION
+Introduction
+Problems
+AD, Gradient descent & Backpropagation
+Numerical differentiation
+Directed Acyclic Graphs
+The chain rule
+Taylor series expansion
+Limits and continuity
+Partial derivatives
+Optimization
+The Gradient descent algorithm
+The Backpropagation algorithm
+Feed forward neural networks
+Activation functions, Autograd/JAX
+Dual numbers in AD
+Forward mode AD
+Forward mode AD table construction
+Symbolic differentiation
+Simple differentiation
+The Beta-Binomial model
+Solutions
+Algorithmic differentiation, Gradient descent
+Numerical differentiation
+Directed Acyclic Graphs
+The chain rule
+Taylor series expansion
+Limits and continuity
+Partial derivatives
+Optimization
+The Gradient descent algorithm
+The Backpropagation algorithm
+Feed forward neural networks
+Activation functions, Autograd/JAX
+Dual numbers in AD
+Forward mode AD
+Forward mode AD table construction
+Symbolic differentiation
+Simple differentiation
+The Beta-Binomial model
+IV Bachelors
+DEEP LEARNING: NN ENSEMBLES
+Introduction
+Problems
+Bagging, Boosting and Stacking
+Approaches for Combining Predictors
+Monolithic and Heterogeneous Ensembling
+Ensemble Learning
+Snapshot Ensembling
+Multi-model Ensembling
+Learning-rate Schedules in Ensembling
+Solutions
+Bagging, Boosting and Stacking
+Approaches for Combining Predictors
+Monolithic and Heterogeneous Ensembling
+Ensemble Learning
+Snapshot Ensembling
+Multi-model Ensembling
+Learning-rate Schedules in Ensembling
+DEEP LEARNING: CNN FEATURE EXTRACTION
+Introduction
+Problems
+CNN as Fixed Feature Extractor
+Fine-tuning CNNs
+Neural style transfer, NST
+Solutions
+CNN as Fixed Feature Extractor
+Fine-tuning CNNs
+Neural style transfer
+DEEP LEARNING
+Introduction
+Problems
+Cross Validation
+Convolution and correlation
+Similarity measures
+Perceptrons
+Activation functions (rectiﬁcation
+Performance Metrics
+NN Layers, topologies, blocks
+Training, hyperparameters
+Optimization, Loss
+Solutions
+Cross Validation
+Convolution and correlation
+Similarity measures
+Perceptrons
+Activation functions (rectiﬁcation
+Performance Metrics
+NN Layers, topologies, blocks
+Training, hyperparameters
+Optimization, Loss
+V Practice Exam
+JOB INTERVIEW MOCK EXAM
+Rules
+Problems
+Perceptrons
+CNN layers
+Classiﬁcation, Logistic regression
+Information theory
+Feature extraction
+Bayesian deep learning
+Introduction
+AI system design
+Advanced CNN topologies
+1D CNN’s
+3D CNN’s
+Data augmentations
+Object detection
+Object segmentation
+Semantic segmentation
+Instance segmentation
+Image classiﬁcation
+Image captioning
+NLP
+RNN
+LSTM
+GANs
+Adversarial attacks and defences
+Variational auto encoders
+FCN
+Seq2Seq
+Monte carlo, ELBO, Re-parametrization
+Text to speech
+Speech to text
+CRF
+Quantum computing
+RL
+xviRUSTY NAILPART ICHAPTER
+1HOW-TO USE THIS BOOK
+The true logic of this world is in the calculus of probabilities
+— James C. Maxwell
+Contents
+Introduction
+What makes this book so valuable
+What will I learn
+Starting Your Career
+Advancing Your Career
+Diving Into Deep Learning
+How to Work Problems
+Types of Problems
+}
+{### Table of contents:contents
+
+1Data science in a big data world
+1.1 Benefits and uses of data science and big data
+1.2 Facets of data
+Structured data 4■Unstructured data
+Natural language 5■Machine-generated data
+Graph-based or network data 7■Audio, image, and video
+Streaming data
+1.3 The data science process
+Setting the research goal 8■Retrieving data
+Data preparation 9■Data exploration
+Data modeling or model building 9■Presentation
+and automation
+1.4 The big data ecosystem and data science
+Distributed file systems 10■Distributed programming
+framework 12■Data integration framework 12CONTENTS viii
+Machine learning frameworks 12■NoSQL databases
+Scheduling tools 14■Benchmarking tools
+System deployment 14■Service programming
+Security
+1.5 An introductory working example of Hadoop
+1.6 Summary
+2The data science process
+2.1 Overview of the data science process
+Don’t be a slave to the process
+2.2 Step 1: Defining research goals and creating
+a project charter
+Spend time understanding the goals and context of your research
+Create a project charter
+2.3 Step 2: Retrieving data
+Start with data stored within the company 28■Don’t be afraid
+to shop around 28■Do data quality checks now to prevent
+problems later
+2.4 Step 3: Cleansing, integrating, and transforming data
+Cleansing data 30■Correct errors as early as possible
+Combining data from different data sources 37Transforming data
+2.5 Step 4: Exploratory data analysis
+2.6 Step 5: Build the models
+Model and variable selection 48■Model execution
+Model diagnostics and model comparison
+2.7 Step 6: Presenting findings and building applications on
+top of them
+2.8 Summary
+3Machine learning
+3.1 What is machine learning and why should you care
+about it
+Applications for machine learning in data science
+Where machine learning is used in the data science process 59Python tools used in machine learning 60CONTENTS ix
+3.2 The modeling process
+Engineering features and selecting a model 62■Training
+your model 64■Validating a model 64■Predicting
+new observations
+3.3 Types of machine learning
+Supervised learning 66■Unsupervised learning
+3.4 Semi-supervised learning
+3.5 Summary
+4Handling large data on a single computer
+4.1 The problems you face when handling large data 864.2 General techniques for handling large volumes of data
+Choosing the right algorithm 88■Choosing the right data
+structure 96■Selecting the right tools
+4.3 General programming tips for dealing with
+large data sets
+Don’t reinvent the wheel 101■Get the most out of your
+hardware 102■Reduce your computing needs
+4.4 Case study 1: Predicting malicious URLs
+Step 1: Defining the research goal 104■Step 2: Acquiring
+the URL data 104■Step 4: Data exploration
+Step 5: Model building
+4.5 Case study 2: Building a recommender system inside
+a database
+Tools and techniques needed 108■Step 1: Research
+question 111■Step 3: Data preparation
+Step 5: Model building 115■Step 6: Presentation
+and automation
+4.6 Summary
+5First steps in big data
+5.1 Distributing data stor age and processing with
+frameworks
+Hadoop: a framework for storing and processing large data sets
+Spark: replacing MapReduce for better performance 123CONTENTS x
+5.2 Case study: Assessing risk when loaning money
+Step 1: The research goal 126■Step 2: Data retrieval
+Step 3: Data preparation 131■Step 4: Data exploration
+Step 6: Report building
+5.3 Summary
+6Join the NoSQL movement
+6.1 Introduction to NoSQL
+ACID: the core principle of relational databases
+CAP Theorem: the problem with DBs on many nodes 154The BASE principles of NoSQL databases 156NoSQL database types
+6.2 Case study: What disease is that
+Step 1: Setting the research goal 166■Steps 2 and 3: Data
+retrieval and preparation 167■Step 4: Data exploration
+Step 3 revisited: Data preparation for disease profiling 183Step 4 revisited: Data explor ation for disease profiling
+Step 6: Presentation and automation
+6.3 Summary
+7The rise of graph databases
+7.1 Introducing connected data and graph databases
+Why and when should I use a graph database
+7.2 Introducing Neo4j: a graph database
+Cypher: a graph query language
+7.3 Connected data example: a recipe recommendation
+engine
+Step 1: Setting the research goal 205■Step 2: Data retrieval
+Step 3: Data preparation 207■Step 4: Data exploration
+Step 5: Data modeling 212■Step 6: Presentation
+7.4 Summary
+8Text mining and text analytics
+8.1 Text mining in the real world
+8.2 Text mining techniques
+Bag of words 225■Stemming and lemmatization
+Decision tree classifier 228CONTENTS xi
+8.3 Case study: Classifying Reddit posts
+Meet the Natural Language Toolkit 231■Data science process
+overview and step 1: The research goal 233■Step 2: Data
+retrieval 234■Step 3: Data preparation 237■Step
+Data exploration 240■Step 3 revisited: Data preparation
+adapted 242■Step 5: Data analysis 246■Step
+Presentation and automation
+8.4 Summary
+9Data visualization to the end user
+9.1 Data visualization options
+9.2 Crossfilter, the JavaScript MapReduce library
+Setting up everything 258■Unleashing Crossfilter to filter the
+medicine data set
+9.3 Creating an interactive dashboard with dc.js 2679.4 Dashboard development tools
+9.5 Summary
+appendix A Setting up Elasticsearch
+appendix B Setting up Neo4j
+appendix C Installing MySQL server
+appendix D Setting up Anaconda with a virtual environment
+}
+{### Table of contents:TABLE OF CONTENTS
+1. Probability of Events
+1.1. Introduction
+1.2. Counting Techniques
+1.3. Probability Measure
+1.4. Some Properties of the Probability Measure
+1.5. Review Exercises
+2. Conditional Probability and Bayes’ Theorem
+2.1. Conditional Probability
+2.2. Bayes’ Theorem
+2.3. Review Exercises
+3. Random Variables and Distribution Functions
+3.1. Introduction
+3.2. Distribution Functions of Discrete Variables
+3.3. Distribution Functions of Continuous Variables
+3.4. Percentile for Continuous Random Variables
+3.5. Review Exercises
+4. Moments of Random Variables and Chebychev Inequality
+4.1. Moments of Random Variables
+4.2. Expected Value of Random Variables
+4.3. Variance of Random Variables
+4.4. Chebychev Inequality
+4.5. Moment Generating Functions
+4.6. Review Exercisesxiii
+5. Some Special Discrete Distributions
+5.1. Bernoulli Distribution
+5.2. Binomial Distribution
+5.3. Geometric Distribution
+5.4. Negative Binomial Distribution
+5.5. Hypergeometric Distribution
+5.6. Poisson Distribution
+5.7. Riemann Zeta Distribution
+5.8. Review Exercises
+6. Some Special Continuous Distributions
+6.1. Uniform Distribution
+6.2. Gamma Distribution
+6.3. Beta Distribution
+6.4. Normal Distribution
+6.5. Lognormal Distribution
+6.6. Inverse Gaussian Distribution
+6.7. Logistic Distribution
+6.8. Review Exercises
+7. Two Random Variables
+7.1. Bivariate Discrete Random Variables
+7.2. Bivariate Continuous Random Variables
+7.3. Conditional Distributions
+7.4. Independence of Random Variables
+7.5. Review Exercises
+8. Product Moments of Bivariate Random Variables
+8.1. Covariance of Bivariate Random Variables
+8.2. Independence of Random Variables
+8.3. Variance of the Linear Combination of Random Variables
+8.4. Correlation and Independence
+8.5. Moment Generating Functions
+8.6. Review Exercisesxiv
+9. Conditional Expectations of Bivariate Random Variables
+9.1. Conditional Expected Values
+9.2. Conditional Variance
+9.3. Regression Curve and Scedastic Curves
+9.4. Review Exercises
+10. Functions of Random Variables and Their Distribution
+10.1. Distribution Function Method
+10.2. Transformation Method for Univariate Case
+10.3. Transformation Method for Bivariate Case
+10.4. Convolution Method for Sums of Random Variables
+10.5. Moment Method for Sums of Random Variables
+10.6. Review Exercises
+11. Some Special Discrete Bivariate Distributions
+11.1. Bivariate Bernoulli Distribution
+11.2. Bivariate Binomial Distribution
+11.3. Bivariate Geometric Distribution
+11.4. Bivariate Negative Binomial Distribution
+11.5. Bivariate Hypergeometric Distribution
+11.6. Bivariate Poisson Distribution
+11.7. Review Exercises
+12. Some Special Continuous Bivariate Distributions
+12.1. Bivariate Uniform Distribution
+12.2. Bivariate Cauchy Distribution
+12.3. Bivariate Gamma Distribution
+12.4. Bivariate Beta Distribution
+12.5. Bivariate Normal Distribution
+12.6. Bivariate Logistic Distribution
+12.7. Review Exercisesxv
+13. Sequences of Random Variables and Order Statistics
+13.1. Distribution of Sample Mean and Variance
+13.2. Laws of Large Numbers
+13.3. The Central Limit Theorem
+13.4. Order Statistics
+13.5. Sample Percentiles
+13.6. Review Exercises
+14. Sampling Distributions Associated with
+the Normal Population
+14.1. Chi-square distribution
+14.2. Student’s t-distribution
+14.3. Snedecor’s F-distribution
+14.4. Review Exercises
+15. Some Techniques for Finding Point
+Estimators of Parameters
+15.1. Moment Method
+15.2. Maximum Likelihood Method
+15.3. Bayesian Method
+15.3. Review Exercises
+16. Criteria for Evaluating the Goodness
+of Estimators
+16.1. The Unbiased Estimator
+16.2. The Relatively E ﬃcient Estimator
+16.3. The Minimum Variance Unbiased Estimator
+16.4. Su ﬃcient Estimator
+16.5. Consistent Estimator
+16.6. Review Exercisesxvi
+17. Some Techniques for Finding Interval
+Estimators of Parameters
+17.1. Interval Estimators and Conﬁdence Intervals for Parameters
+17.2. Pivotal Quantity Method
+17.3. Conﬁdence Interval for Population Mean
+17.4. Conﬁdence Interval for Population Variance
+17.5. Conﬁdence Interval for Parameter of some Distributions
+not belonging to the Location-Scale Family
+17.6. Approximate Conﬁdence Interval for Parameter with MLE
+17.7. The Statistical or General Method
+17.8. Criteria for Evaluating Conﬁdence Intervals
+17.9. Review Exercises
+18. Test of Statistical Hypotheses
+18.1. Introduction
+18.2. A Method of Finding Tests
+18.3. Methods of Evaluating Tests
+18.4. Some Examples of Likelihood Ratio Tests
+18.5. Review Exercises
+19. Simple Linear Regression and Correlation Analysis
+19.1. Least Squared Method
+19.2. Normal Regression Analysis
+19.3. The Correlation Analysis
+19.4. Review Exercises
+20. Analysis of Variance
+20.1. One-way Analysis of Variance with Equal Sample Sizes
+20.2. One-way Analysis of Variance with Unequal Sample Sizes
+20.3. Pair wise Comparisons
+20.4. Tests for the Homogeneity of Variances
+20.5. Review Exercisesxvii
+21. Goodness of Fits Tests
+21.1. Chi-Squared test
+21.2. Kolmogorov-Smirnov test
+21.3. Review Exercises
+References
+Answers to Selected Review Exercises 
+Probability and Mathematical Statistics
+}
+{### Table of contents:TABLE OF CONTENTS
+About this Book
+1 Decision Trees
+2 Geometry and Nearest Neighbors
+3 The Perceptron
+4 Practical Issues
+5 Beyond Binary Classification
+6 Linear Models
+7 Probabilistic Modeling
+8 Neural Networks
+9 Kernel Methods
+10 Learning Theory
+11 Ensemble Methods
+12 Efficient Learning
+13 Unsupervised Learning
+14 Expectation Maximization
+15 Semi-Supervised Learning
+16 Graphical Models
+17 Online Learning
+18 Structured Learning Tasks
+}
+{### Table of contents:Contents
+Preface pagexxv
+Installation xxxiv
+Notation xxxvii
+1 Introduction
+1.1 A Motivating Example
+1.2 Key Components
+1.3 Kinds of Machine Learning Problems
+1.4 Roots
+1.5 The Road to Deep Learning
+1.6 Success Stories
+1.7 The Essence of Deep Learning
+1.8 Summary
+1.9 Exercises
+2 Preliminaries
+2.1 Data Manipulation
+2.1.1 Getting Started
+2.1.2 Indexing and Slicing
+2.1.3 Operations
+2.1.4 Broadcasting
+2.1.5 Saving Memory
+2.1.6 Conversion to Other Python Objects
+2.1.7 Summary
+2.1.8 Exercises
+2.2 Data Preprocessing
+2.2.1 Reading the Dataset
+2.2.2 Data Preparation
+2.2.3 Conversion to the Tensor Format
+2.2.4 Discussion
+2.2.5 Exercises
+2.3 Linear Algebra
+2.3.1 Scalars
+iii2.3.2 Vectors
+2.3.3 Matrices
+2.3.4 Tensors
+2.3.5 Basic Properties of Tensor Arithmetic
+2.3.6 Reduction
+2.3.7 Non-Reduction Sum
+2.3.8 Dot Products
+2.3.9 Matrix–Vector Products
+2.3.10 Matrix–Matrix Multiplication
+2.3.11 Norms
+2.3.12 Discussion
+2.3.13 Exercises
+2.4 Calculus
+2.4.1 Derivatives and Differentiation
+2.4.2 Visualization Utilities
+2.4.3 Partial Derivatives and Gradients
+2.4.4 Chain Rule
+2.4.5 Discussion
+2.4.6 Exercises
+2.5 Automatic Differentiation
+2.5.1 A Simple Function
+2.5.2 Backward for Non-Scalar Variables
+2.5.3 Detaching Computation
+2.5.4 Gradients and Python Control Flow
+2.5.5 Discussion
+2.5.6 Exercises
+2.6 Probability and Statistics
+2.6.1 A Simple Example: Tossing Coins
+2.6.2 A More Formal Treatment
+2.6.3 Random Variables
+2.6.4 Multiple Random Variables
+2.6.5 An Example
+2.6.6 Expectations
+2.6.7 Discussion
+2.6.8 Exercises
+2.7 Documentation
+2.7.1 Functions and Classes in a Module
+2.7.2 Specific Functions and Classes
+3 Linear Neural Networks for Regression
+3.1 Linear Regression
+3.1.1 Basics
+3.1.2 Vectorization for Speed
+3.1.3 The Normal Distribution and Squared Loss
+3.1.4 Linear Regression as a Neural Network
+iv3.1.5 Summary
+3.1.6 Exercises
+3.2 Object-Oriented Design for Implementation
+3.2.1 Utilities
+3.2.2 Models
+3.2.3 Data
+3.2.4 Training
+3.2.5 Summary
+3.2.6 Exercises
+3.3 Synthetic Regression Data
+3.3.1 Generating the Dataset
+3.3.2 Reading the Dataset
+3.3.3 Concise Implementation of the Data Loader
+3.3.4 Summary
+3.3.5 Exercises
+3.4 Linear Regression Implementation from Scratch
+3.4.1 Defining the Model
+3.4.2 Defining the Loss Function
+3.4.3 Defining the Optimization Algorithm
+3.4.4 Training
+3.4.5 Summary
+3.4.6 Exercises
+3.5 Concise Implementation of Linear Regression
+3.5.1 Defining the Model
+3.5.2 Defining the Loss Function
+3.5.3 Defining the Optimization Algorithm
+3.5.4 Training
+3.5.5 Summary
+3.5.6 Exercises
+3.6 Generalization
+3.6.1 Training Error and Generalization Error
+3.6.2 Underfitting or Overfitting
+3.6.3 Model Selection
+3.6.4 Summary
+3.6.5 Exercises
+3.7 Weight Decay
+3.7.1 Norms and Weight Decay
+3.7.2 High-Dimensional Linear Regression
+3.7.3 Implementation from Scratch
+3.7.4 Concise Implementation
+3.7.5 Summary
+3.7.6 Exercises
+4 Linear Neural Networks for Classiﬁcation
+4.1 Softmax Regression
+v4.1.1 Classification
+4.1.2 Loss Function
+4.1.3 Information Theory Basics
+4.1.4 Summary and Discussion
+4.1.5 Exercises
+4.2 The Image Classification Dataset
+4.2.1 Loading the Dataset
+4.2.2 Reading a Minibatch
+4.2.3 Visualization
+4.2.4 Summary
+4.2.5 Exercises
+4.3 The Base Classification Model
+4.3.1 TheClassifier Class
+4.3.2 Accuracy
+4.3.3 Summary
+4.3.4 Exercises
+4.4 Softmax Regression Implementation from Scratch
+4.4.1 The Softmax
+4.4.2 The Model
+4.4.3 The Cross-Entropy Loss
+4.4.4 Training
+4.4.5 Prediction
+4.4.6 Summary
+4.4.7 Exercises
+4.5 Concise Implementation of Softmax Regression
+4.5.1 Defining the Model
+4.5.2 Softmax Revisited
+4.5.3 Training
+4.5.4 Summary
+4.5.5 Exercises
+4.6 Generalization in Classification
+4.6.1 The Test Set
+4.6.2 Test Set Reuse
+4.6.3 Statistical Learning Theory
+4.6.4 Summary
+4.6.5 Exercises
+4.7 Environment and Distribution Shift
+4.7.1 Types of Distribution Shift
+4.7.2 Examples of Distribution Shift
+4.7.3 Correction of Distribution Shift
+4.7.4 A Taxonomy of Learning Problems
+4.7.5 Fairness, Accountability, and Transparency in Machine
+Learning
+4.7.6 Summary
+4.7.7 Exercises
+vi5 Multilayer Perceptrons
+5.1 Multilayer Perceptrons
+5.1.1 Hidden Layers
+5.1.2 Activation Functions
+5.1.3 Summary and Discussion
+5.1.4 Exercises
+5.2 Implementation of Multilayer Perceptrons
+5.2.1 Implementation from Scratch
+5.2.2 Concise Implementation
+5.2.3 Summary
+5.2.4 Exercises
+5.3 Forward Propagation, Backward Propagation, and Computational Graphs
+5.3.1 Forward Propagation
+5.3.2 Computational Graph of Forward Propagation
+5.3.3 Backpropagation
+5.3.4 Training Neural Networks
+5.3.5 Summary
+5.3.6 Exercises
+5.4 Numerical Stability and Initialization
+5.4.1 Vanishing and Exploding Gradients
+5.4.2 Parameter Initialization
+5.4.3 Summary
+5.4.4 Exercises
+5.5 Generalization in Deep Learning
+5.5.1 Revisiting Overfitting and Regularization
+5.5.2 Inspiration from Nonparametrics
+5.5.3 Early Stopping
+5.5.4 Classical Regularization Methods for Deep Networks
+5.5.5 Summary
+5.5.6 Exercises
+5.6 Dropout
+5.6.1 Dropout in Practice
+5.6.2 Implementation from Scratch
+5.6.3 Concise Implementation
+5.6.4 Summary
+5.6.5 Exercises
+5.7 Predicting House Prices on Kaggle
+5.7.1 Downloading Data
+5.7.2 Kaggle
+5.7.3 Accessing and Reading the Dataset
+5.7.4 Data Preprocessing
+5.7.5 Error Measure
+5.7.6 𝐾-Fold Cross-Validation
+5.7.7 Model Selection
+5.7.8 Submitting Predictions on Kaggle
+vii5.7.9 Summary and Discussion
+5.7.10 Exercises
+6 Builders’ Guide
+6.1 Layers and Modules
+6.1.1 A Custom Module
+6.1.2 The Sequential Module
+6.1.3 Executing Code in the Forward Propagation Method
+6.1.4 Summary
+6.1.5 Exercises
+6.2 Parameter Management
+6.2.1 Parameter Access
+6.2.2 Tied Parameters
+6.2.3 Summary
+6.2.4 Exercises
+6.3 Parameter Initialization
+6.3.1 Built-in Initialization
+6.3.2 Summary
+6.3.3 Exercises
+6.4 Lazy Initialization
+6.4.1 Summary
+6.4.2 Exercises
+6.5 Custom Layers
+6.5.1 Layers without Parameters
+6.5.2 Layers with Parameters
+6.5.3 Summary
+6.5.4 Exercises
+6.6 File I/O
+6.6.1 Loading and Saving Tensors
+6.6.2 Loading and Saving Model Parameters
+6.6.3 Summary
+6.6.4 Exercises
+6.7 GPUs
+6.7.1 Computing Devices
+6.7.2 Tensors and GPUs
+6.7.3 Neural Networks and GPUs
+6.7.4 Summary
+6.7.5 Exercises
+7 Convolutional Neural Networks
+7.1 From Fully Connected Layers to Convolutions
+7.1.1 Invariance
+7.1.2 Constraining the MLP
+7.1.3 Convolutions
+7.1.4 Channels
+viii7.1.5 Summary and Discussion
+7.1.6 Exercises
+7.2 Convolutions for Images
+7.2.1 The Cross-Correlation Operation
+7.2.2 Convolutional Layers
+7.2.3 Object Edge Detection in Images
+7.2.4 Learning a Kernel
+7.2.5 Cross-Correlation and Convolution
+7.2.6 Feature Map and Receptive Field
+7.2.7 Summary
+7.2.8 Exercises
+7.3 Padding and Stride
+7.3.1 Padding
+7.3.2 Stride
+7.3.3 Summary and Discussion
+7.3.4 Exercises
+7.4 Multiple Input and Multiple Output Channels
+7.4.1 Multiple Input Channels
+7.4.2 Multiple Output Channels
+7.4.3 11Convolutional Layer
+7.4.4 Discussion
+7.4.5 Exercises
+7.5 Pooling
+7.5.1 Maximum Pooling and Average Pooling
+7.5.2 Padding and Stride
+7.5.3 Multiple Channels
+7.5.4 Summary
+7.5.5 Exercises
+7.6 Convolutional Neural Networks (LeNet)
+7.6.1 LeNet
+7.6.2 Training
+7.6.3 Summary
+7.6.4 Exercises
+8 Modern Convolutional Neural Networks
+8.1 Deep Convolutional Neural Networks (AlexNet)
+8.1.1 Representation Learning
+8.1.2 AlexNet
+8.1.3 Training
+8.1.4 Discussion
+8.1.5 Exercises
+8.2 Networks Using Blocks (VGG)
+8.2.1 VGG Blocks
+8.2.2 VGG Network
+8.2.3 Training
+ix8.2.4 Summary
+8.2.5 Exercises
+8.3 Network in Network (NiN)
+8.3.1 NiN Blocks
+8.3.2 NiN Model
+8.3.3 Training
+8.3.4 Summary
+8.3.5 Exercises
+8.4 Multi-Branch Networks (GoogLeNet)
+8.4.1 Inception Blocks
+8.4.2 GoogLeNet Model
+8.4.3 Training
+8.4.4 Discussion
+8.4.5 Exercises
+8.5 Batch Normalization
+8.5.1 Training Deep Networks
+8.5.2 Batch Normalization Layers
+8.5.3 Implementation from Scratch
+8.5.4 LeNet with Batch Normalization
+8.5.5 Concise Implementation
+8.5.6 Discussion
+8.5.7 Exercises
+8.6 Residual Networks (ResNet) and ResNeXt
+8.6.1 Function Classes
+8.6.2 Residual Blocks
+8.6.3 ResNet Model
+8.6.4 Training
+8.6.5 ResNeXt
+8.6.6 Summary and Discussion
+8.6.7 Exercises
+8.7 Densely Connected Networks (DenseNet)
+8.7.1 From ResNet to DenseNet
+8.7.2 Dense Blocks
+8.7.3 Transition Layers
+8.7.4 DenseNet Model
+8.7.5 Training
+8.7.6 Summary and Discussion
+8.7.7 Exercises
+8.8 Designing Convolution Network Architectures
+8.8.1 The AnyNet Design Space
+8.8.2 Distributions and Parameters of Design Spaces
+8.8.3 RegNet
+8.8.4 Training
+8.8.5 Discussion
+8.8.6 Exercises
+x9 Recurrent Neural Networks
+9.1 Working with Sequences
+9.1.1 Autoregressive Models
+9.1.2 Sequence Models
+9.1.3 Training
+9.1.4 Prediction
+9.1.5 Summary
+9.1.6 Exercises
+9.2 Converting Raw Text into Sequence Data
+9.2.1 Reading the Dataset
+9.2.2 Tokenization
+9.2.3 Vocabulary
+9.2.4 Putting It All Together
+9.2.5 Exploratory Language Statistics
+9.2.6 Summary
+9.2.7 Exercises
+9.3 Language Models
+9.3.1 Learning Language Models
+9.3.2 Perplexity
+9.3.3 Partitioning Sequences
+9.3.4 Summary and Discussion
+9.3.5 Exercises
+9.4 Recurrent Neural Networks
+9.4.1 Neural Networks without Hidden States
+9.4.2 Recurrent Neural Networks with Hidden States
+9.4.3 RNN-Based Character-Level Language Models
+9.4.4 Summary
+9.4.5 Exercises
+9.5 Recurrent Neural Network Implementation from Scratch
+9.5.1 RNN Model
+9.5.2 RNN-Based Language Model
+9.5.3 Gradient Clipping
+9.5.4 Training
+9.5.5 Decoding
+9.5.6 Summary
+9.5.7 Exercises
+9.6 Concise Implementation of Recurrent Neural Networks
+9.6.1 Defining the Model
+9.6.2 Training and Predicting
+9.6.3 Summary
+9.6.4 Exercises
+9.7 Backpropagation Through Time
+9.7.1 Analysis of Gradients in RNNs
+9.7.2 Backpropagation Through Time in Detail
+9.7.3 Summary
+xi9.7.4 Exercises
+10 Modern Recurrent Neural Networks
+10.1 Long Short-Term Memory (LSTM)
+10.1.1 Gated Memory Cell
+10.1.2 Implementation from Scratch
+10.1.3 Concise Implementation
+10.1.4 Summary
+10.1.5 Exercises
+10.2 Gated Recurrent Units (GRU)
+10.2.1 Reset Gate and Update Gate
+10.2.2 Candidate Hidden State
+10.2.3 Hidden State
+10.2.4 Implementation from Scratch
+10.2.5 Concise Implementation
+10.2.6 Summary
+10.2.7 Exercises
+10.3 Deep Recurrent Neural Networks
+10.3.1 Implementation from Scratch
+10.3.2 Concise Implementation
+10.3.3 Summary
+10.3.4 Exercises
+10.4 Bidirectional Recurrent Neural Networks
+10.4.1 Implementation from Scratch
+10.4.2 Concise Implementation
+10.4.3 Summary
+10.4.4 Exercises
+10.5 Machine Translation and the Dataset
+10.5.1 Downloading and Preprocessing the Dataset
+10.5.2 Tokenization
+10.5.3 Loading Sequences of Fixed Length
+10.5.4 Reading the Dataset
+10.5.5 Summary
+10.5.6 Exercises
+10.6 The Encoder Decoder Architecture
+10.6.1 Encoder
+10.6.2 Decoder
+10.6.3 Putting the Encoder and Decoder Together
+10.6.4 Summary
+10.6.5 Exercises
+10.7 Sequence-to-Sequence Learning for Machine Translation
+10.7.1 Teacher Forcing
+10.7.2 Encoder
+10.7.3 Decoder
+10.7.4 Encoder–Decoder for Sequence-to-Sequence Learning
+xii10.7.5 Loss Function with Masking
+10.7.6 Training
+10.7.7 Prediction
+10.7.8 Evaluation of Predicted Sequences
+10.7.9 Summary
+10.7.10 Exercises
+10.8 Beam Search
+10.8.1 Greedy Search
+10.8.2 Exhaustive Search
+10.8.3 Beam Search
+10.8.4 Summary
+10.8.5 Exercises
+11 Attention Mechanisms and Transformers
+11.1 Queries, Keys, and Values
+11.1.1 Visualization
+11.1.2 Summary
+11.1.3 Exercises
+11.2 Attention Pooling by Similarity
+11.2.1 Kernels and Data
+11.2.2 Attention Pooling via Nadaraya–Watson Regression
+11.2.3 Adapting Attention Pooling
+11.2.4 Summary
+11.2.5 Exercises
+11.3 Attention Scoring Functions
+11.3.1 Dot Product Attention
+11.3.2 Convenience Functions
+11.3.3 Scaled Dot Product Attention
+11.3.4 Additive Attention
+11.3.5 Summary
+11.3.6 Exercises
+11.4 The Bahdanau Attention Mechanism
+11.4.1 Model
+11.4.2 Defining the Decoder with Attention
+11.4.3 Training
+11.4.4 Summary
+11.4.5 Exercises
+11.5 Multi-Head Attention
+11.5.1 Model
+11.5.2 Implementation
+11.5.3 Summary
+11.5.4 Exercises
+11.6 Self-Attention and Positional Encoding
+11.6.1 Self-Attention
+11.6.2 Comparing CNNs, RNNs, and Self-Attention
+xiii11.6.3 Positional Encoding
+11.6.4 Summary
+11.6.5 Exercises
+11.7 The Transformer Architecture
+11.7.1 Model
+11.7.2 Positionwise Feed-Forward Networks
+11.7.3 Residual Connection and Layer Normalization
+11.7.4 Encoder
+11.7.5 Decoder
+11.7.6 Training
+11.7.7 Summary
+11.7.8 Exercises
+11.8 Transformers for Vision
+11.8.1 Model
+11.8.2 Patch Embedding
+11.8.3 Vision Transformer Encoder
+11.8.4 Putting It All Together
+11.8.5 Training
+11.8.6 Summary and Discussion
+11.8.7 Exercises
+11.9 Large-Scale Pretraining with Transformers
+11.9.1 Encoder-Only
+11.9.2 Encoder–Decoder
+11.9.3 Decoder-Only
+11.9.4 Scalability
+11.9.5 Large Language Models
+11.9.6 Summary and Discussion
+11.9.7 Exercises
+12 Optimization Algorithms
+12.1 Optimization and Deep Learning
+12.1.1 Goal of Optimization
+12.1.2 Optimization Challenges in Deep Learning
+12.1.3 Summary
+12.1.4 Exercises
+12.2 Convexity
+12.2.1 Definitions
+12.2.2 Properties
+12.2.3 Constraints
+12.2.4 Summary
+12.2.5 Exercises
+12.3 Gradient Descent
+12.3.1 One-Dimensional Gradient Descent
+12.3.2 Multivariate Gradient Descent
+12.3.3 Adaptive Methods
+xiv12.3.4 Summary
+12.3.5 Exercises
+12.4 Stochastic Gradient Descent
+12.4.1 Stochastic Gradient Updates
+12.4.2 Dynamic Learning Rate
+12.4.3 Convergence Analysis for Convex Objectives
+12.4.4 Stochastic Gradients and Finite Samples
+12.4.5 Summary
+12.4.6 Exercises
+12.5 Minibatch Stochastic Gradient Descent
+12.5.1 Vectorization and Caches
+12.5.2 Minibatches
+12.5.3 Reading the Dataset
+12.5.4 Implementation from Scratch
+12.5.5 Concise Implementation
+12.5.6 Summary
+12.5.7 Exercises
+12.6 Momentum
+12.6.1 Basics
+12.6.2 Practical Experiments
+12.6.3 Theoretical Analysis
+12.6.4 Summary
+12.6.5 Exercises
+12.7 Adagrad
+12.7.1 Sparse Features and Learning Rates
+12.7.2 Preconditioning
+12.7.3 The Algorithm
+12.7.4 Implementation from Scratch
+12.7.5 Concise Implementation
+12.7.6 Summary
+12.7.7 Exercises
+12.8 RMSProp
+12.8.1 The Algorithm
+12.8.2 Implementation from Scratch
+12.8.3 Concise Implementation
+12.8.4 Summary
+12.8.5 Exercises
+12.9 Adadelta
+12.9.1 The Algorithm
+12.9.2 Implementation
+12.9.3 Summary
+12.9.4 Exercises
+12.10 Adam
+12.10.1 The Algorithm
+12.10.2 Implementation
+xv12.10.3 Yogi
+12.10.4 Summary
+12.10.5 Exercises
+12.11 Learning Rate Scheduling
+12.11.1 Toy Problem
+12.11.2 Schedulers
+12.11.3 Policies
+12.11.4 Summary
+12.11.5 Exercises
+13 Computational Performance
+13.1 Compilers and Interpreters
+13.1.1 Symbolic Programming
+13.1.2 Hybrid Programming
+13.1.3 Hybridizing the Sequential Class
+13.1.4 Summary
+13.1.5 Exercises
+13.2 Asynchronous Computation
+13.2.1 Asynchrony via Backend
+13.2.2 Barriers and Blockers
+13.2.3 Improving Computation
+13.2.4 Summary
+13.2.5 Exercises
+13.3 Automatic Parallelism
+13.3.1 Parallel Computation on GPUs
+13.3.2 Parallel Computation and Communication
+13.3.3 Summary
+13.3.4 Exercises
+13.4 Hardware
+13.4.1 Computers
+13.4.2 Memory
+13.4.3 Storage
+13.4.4 CPUs
+13.4.5 GPUs and other Accelerators
+13.4.6 Networks and Buses
+13.4.7 More Latency Numbers
+13.4.8 Summary
+13.4.9 Exercises
+13.5 Training on Multiple GPUs
+13.5.1 Splitting the Problem
+13.5.2 Data Parallelism
+13.5.3 A Toy Network
+13.5.4 Data Synchronization
+13.5.5 Distributing Data
+13.5.6 Training
+xvi13.5.7 Summary
+13.5.8 Exercises
+13.6 Concise Implementation for Multiple GPUs
+13.6.1 A Toy Network
+13.6.2 Network Initialization
+13.6.3 Training
+13.6.4 Summary
+13.6.5 Exercises
+13.7 Parameter Servers
+13.7.1 Data-Parallel Training
+13.7.2 Ring Synchronization
+13.7.3 Multi-Machine Training
+13.7.4 Key–Value Stores
+13.7.5 Summary
+13.7.6 Exercises
+14 Computer Vision
+14.1 Image Augmentation
+14.1.1 Common Image Augmentation Methods
+14.1.2 Training with Image Augmentation
+14.1.3 Summary
+14.1.4 Exercises
+14.2 Fine-Tuning
+14.2.1 Steps
+14.2.2 Hot Dog Recognition
+14.2.3 Summary
+14.2.4 Exercises
+14.3 Object Detection and Bounding Boxes
+14.3.1 Bounding Boxes
+14.3.2 Summary
+14.3.3 Exercises
+14.4 Anchor Boxes
+14.4.1 Generating Multiple Anchor Boxes
+14.4.2 Intersection over Union (IoU)
+14.4.3 Labeling Anchor Boxes in Training Data
+14.4.4 PredictingBoundingBoxeswithNon-MaximumSuppression
+14.4.5 Summary
+14.4.6 Exercises
+14.5 Multiscale Object Detection
+14.5.1 Multiscale Anchor Boxes
+14.5.2 Multiscale Detection
+14.5.3 Summary
+14.5.4 Exercises
+14.6 The Object Detection Dataset
+14.6.1 Downloading the Dataset
+xvii14.6.2 Reading the Dataset
+14.6.3 Demonstration
+14.6.4 Summary
+14.6.5 Exercises
+14.7 Single Shot Multibox Detection
+14.7.1 Model
+14.7.2 Training
+14.7.3 Prediction
+14.7.4 Summary
+14.7.5 Exercises
+14.8 Region-based CNNs (R-CNNs)
+14.8.1 R-CNNs
+14.8.2 Fast R-CNN
+14.8.3 Faster R-CNN
+14.8.4 Mask R-CNN
+14.8.5 Summary
+14.8.6 Exercises
+14.9 Semantic Segmentation and the Dataset
+14.9.1 Image Segmentation and Instance Segmentation
+14.9.2 The Pascal VOC2012 Semantic Segmentation Dataset
+14.9.3 Summary
+14.9.4 Exercises
+14.10 Transposed Convolution
+14.10.1 Basic Operation
+14.10.2 Padding, Strides, and Multiple Channels
+14.10.3 Connection to Matrix Transposition
+14.10.4 Summary
+14.10.5 Exercises
+14.11 Fully Convolutional Networks
+14.11.1 The Model
+14.11.2 Initializing Transposed Convolutional Layers
+14.11.3 Reading the Dataset
+14.11.4 Training
+14.11.5 Prediction
+14.11.6 Summary
+14.11.7 Exercises
+14.12 Neural Style Transfer
+14.12.1 Method
+14.12.2 Reading the Content and Style Images
+14.12.3 Preprocessing and Postprocessing
+14.12.4 Extracting Features
+14.12.5 Defining the Loss Function
+14.12.6 Initializing the Synthesized Image
+14.12.7 Training
+14.12.8 Summary
+xviii14.12.9 Exercises
+14.13 Image Classification (CIFAR-10) on Kaggle
+14.13.1 Obtaining and Organizing the Dataset
+14.13.2 Image Augmentation
+14.13.3 Reading the Dataset
+14.13.4 Defining the Model
+14.13.5 Defining the Training Function
+14.13.6 Training and Validating the Model
+14.13.7 Classifying the Testing Set and Submitting Results on Kaggle
+14.13.8 Summary
+14.13.9 Exercises
+14.14 Dog Breed Identification (ImageNet Dogs) on Kaggle
+14.14.1 Obtaining and Organizing the Dataset
+14.14.2 Image Augmentation
+14.14.3 Reading the Dataset
+14.14.4 Fine-Tuning a Pretrained Model
+14.14.5 Defining the Training Function
+14.14.6 Training and Validating the Model
+14.14.7 Classifying the Testing Set and Submitting Results on Kaggle
+14.14.8 Summary
+14.14.9 Exercises
+15 Natural Language Processing: Pretraining
+15.1 Word Embedding (word2vec)
+15.1.1 One-Hot Vectors Are a Bad Choice
+15.1.2 Self-Supervised word2vec
+15.1.3 The Skip-Gram Model
+15.1.4 The Continuous Bag of Words (CBOW) Model
+15.1.5 Summary
+15.1.6 Exercises
+15.2 Approximate Training
+15.2.1 Negative Sampling
+15.2.2 Hierarchical Softmax
+15.2.3 Summary
+15.2.4 Exercises
+15.3 The Dataset for Pretraining Word Embeddings
+15.3.1 Reading the Dataset
+15.3.2 Subsampling
+15.3.3 Extracting Center Words and Context Words
+15.3.4 Negative Sampling
+15.3.5 Loading Training Examples in Minibatches
+15.3.6 Putting It All Together
+15.3.7 Summary
+15.3.8 Exercises
+15.4 Pretraining word2vec
+xix15.4.1 The Skip-Gram Model
+15.4.2 Training
+15.4.3 Applying Word Embeddings
+15.4.4 Summary
+15.4.5 Exercises
+15.5 Word Embedding with Global Vectors (GloVe)
+15.5.1 Skip-Gram with Global Corpus Statistics
+15.5.2 The GloVe Model
+15.5.3 Interpreting GloVe from the Ratio of Co-occurrence
+Probabilities
+15.5.4 Summary
+15.5.5 Exercises
+15.6 Subword Embedding
+15.6.1 The fastText Model
+15.6.2 Byte Pair Encoding
+15.6.3 Summary
+15.6.4 Exercises
+15.7 Word Similarity and Analogy
+15.7.1 Loading Pretrained Word Vectors
+15.7.2 Applying Pretrained Word Vectors
+15.7.3 Summary
+15.7.4 Exercises
+15.8 Bidirectional Encoder Representations from Transformers (BERT)
+15.8.1 From Context-Independent to Context-Sensitive
+15.8.2 From Task-Specific to Task-Agnostic
+15.8.3 BERT: Combining the Best of Both Worlds
+15.8.4 Input Representation
+15.8.5 Pretraining Tasks
+15.8.6 Putting It All Together
+15.8.7 Summary
+15.8.8 Exercises
+15.9 The Dataset for Pretraining BERT
+15.9.1 Defining Helper Functions for Pretraining Tasks
+15.9.2 Transforming Text into the Pretraining Dataset
+15.9.3 Summary
+15.9.4 Exercises
+15.10 Pretraining BERT
+15.10.1 Pretraining BERT
+15.10.2 Representing Text with BERT
+15.10.3 Summary
+15.10.4 Exercises
+16 Natural Language Processing: Applications
+16.1 Sentiment Analysis and the Dataset
+16.1.1 Reading the Dataset
+xx16.1.2 Preprocessing the Dataset
+16.1.3 Creating Data Iterators
+16.1.4 Putting It All Together
+16.1.5 Summary
+16.1.6 Exercises
+16.2 Sentiment Analysis: Using Recurrent Neural Networks
+16.2.1 Representing Single Text with RNNs
+16.2.2 Loading Pretrained Word Vectors
+16.2.3 Training and Evaluating the Model
+16.2.4 Summary
+16.2.5 Exercises
+16.3 Sentiment Analysis: Using Convolutional Neural Networks
+16.3.1 One-Dimensional Convolutions
+16.3.2 Max-Over-Time Pooling
+16.3.3 The textCNN Model
+16.3.4 Summary
+16.3.5 Exercises
+16.4 Natural Language Inference and the Dataset
+16.4.1 Natural Language Inference
+16.4.2 The Stanford Natural Language Inference (SNLI) Dataset
+16.4.3 Summary
+16.4.4 Exercises
+16.5 Natural Language Inference: Using Attention
+16.5.1 The Model
+16.5.2 Training and Evaluating the Model
+16.5.3 Summary
+16.5.4 Exercises
+16.6 Fine-Tuning BERT for Sequence-Level and Token-Level Applications
+16.6.1 Single Text Classification
+16.6.2 Text Pair Classification or Regression
+16.6.3 Text Tagging
+16.6.4 Question Answering
+16.6.5 Summary
+16.6.6 Exercises
+16.7 Natural Language Inference: Fine-Tuning BERT
+16.7.1 Loading Pretrained BERT
+16.7.2 The Dataset for Fine-Tuning BERT
+16.7.3 Fine-Tuning BERT
+16.7.4 Summary
+16.7.5 Exercises
+17 Reinforcement Learning
+17.1 Markov Decision Process (MDP)
+17.1.1 Definition of an MDP
+17.1.2 Return and Discount Factor
+xxi17.1.3 Discussion of the Markov Assumption
+17.1.4 Summary
+17.1.5 Exercises
+17.2 Value Iteration
+17.2.1 Stochastic Policy
+17.2.2 Value Function
+17.2.3 Action-Value Function
+17.2.4 Optimal Stochastic Policy
+17.2.5 Principle of Dynamic Programming
+17.2.6 Value Iteration
+17.2.7 Policy Evaluation
+17.2.8 Implementation of Value Iteration
+17.2.9 Summary
+17.2.10 Exercises
+17.3 Q-Learning
+17.3.1 The Q-Learning Algorithm
+17.3.2 An Optimization Problem Underlying Q-Learning
+17.3.3 Exploration in Q-Learning
+17.3.4 The “Self-correcting” Property of Q-Learning
+17.3.5 Implementation of Q-Learning
+17.3.6 Summary
+17.3.7 Exercises
+18 Gaussian Processes
+18.1 Introduction to Gaussian Processes
+18.1.1 Summary
+18.1.2 Exercises
+18.2 Gaussian Process Priors
+18.2.1 Definition
+18.2.2 A Simple Gaussian Process
+18.2.3 From Weight Space to Function Space
+18.2.4 The Radial Basis Function (RBF) Kernel
+18.2.5 The Neural Network Kernel
+18.2.6 Summary
+18.2.7 Exercises
+18.3 Gaussian Process Inference
+18.3.1 Posterior Inference for Regression
+18.3.2 Equations for Making Predictions and Learning Kernel
+Hyperparameters in GP Regression
+18.3.3 Interpreting Equations for Learning and Predictions
+18.3.4 Worked Example from Scratch
+18.3.5 Making Life Easy with GPyTorch
+18.3.6 Summary
+18.3.7 Exercises
+xxii19 Hyperparameter Optimization
+19.1 What Is Hyperparameter Optimization
+19.1.1 The Optimization Problem
+19.1.2 Random Search
+19.1.3 Summary
+19.1.4 Exercises
+19.2 Hyperparameter Optimization API
+19.2.1 Searcher
+19.2.2 Scheduler
+19.2.3 Tuner
+19.2.4 Bookkeeping the Performance of HPO Algorithms
+19.2.5 Example: Optimizing the Hyperparameters of a Convolu
+tional Neural Network
+19.2.6 Comparing HPO Algorithms
+19.2.7 Summary
+19.2.8 Exercises
+19.3 Asynchronous Random Search
+19.3.1 Objective Function
+19.3.2 Asynchronous Scheduler
+19.3.3 Visualize the Asynchronous Optimization Process
+19.3.4 Summary
+19.3.5 Exercises
+19.4 Multi-Fidelity Hyperparameter Optimization
+19.4.1 Successive Halving
+19.4.2 Summary
+19.5 Asynchronous Successive Halving
+19.5.1 Objective Function
+19.5.2 Asynchronous Scheduler
+19.5.3 Visualize the Optimization Process
+19.5.4 Summary
+20 Generative Adversarial Networks
+20.1 Generative Adversarial Networks
+20.1.1 Generate Some “Real” Data
+20.1.2 Generator
+20.1.3 Discriminator
+20.1.4 Training
+20.1.5 Summary
+20.1.6 Exercises
+20.2 Deep Convolutional Generative Adversarial Networks
+20.2.1 The Pokemon Dataset
+20.2.2 The Generator
+20.2.3 Discriminator
+20.2.4 Training
+20.2.5 Summary
+xxiiixxiv Contents
+20.2.6 Exercises
+21 Recommender Systems
+21.1 Overview of Recommender Systems
+21.1.1 Collaborative Filtering
+21.1.2 Explicit Feedback and Implicit Feedback
+21.1.3 Recommendation Tasks
+21.1.4 Summary
+21.1.5 Exercises
+Appendix A Mathematics for Deep Learning
+Appendix B Tools for Deep Learning
+References 1089Preface
+}
+{### Table of contents:index.
+1 DataMiningand Analysis
+1.1 Data Matrix
+1.2 Attributes
+1.3 Data: Algebraic and Geometric View
+1.4 Data: Probabilistic View
+1.5 Data Mining
+1.6 Further Reading
+1.7 Exercises
+PART ONE: DATA ANALYSIS FOUNDATIONS
+2 NumericAttributes
+2.1 Univariate Analysis
+2.2 Bivariate Analysis
+2.3 Multivariate Analysis
+2.4 Data Normalization
+2.5 Normal Distribution
+2.6 Further Reading
+2.7 Exercises
+3 CategoricalAttributes
+3.1 Univariate Analysis
+3.2 Bivariate Analysis
+3.3 Multivariate Analysis
+3.4 Distance and Angle
+3.5 Discretization
+3.6 Further Reading
+3.7 Exercises
+4 GraphData
+4.1 Graph Concepts
+4.2 Topological Attributes
+vvi Contents
+4.3 Centrality Analysis
+4.4 Graph Models
+4.5 Further Reading
+4.6 Exercises
+5 KernelMethods
+5.1 Kernel Matrix
+5.2 Vector Kernels
+5.3 Basic Kernel Operations in Feature Space
+5.4 Kernels for Complex Objects
+5.5 Further Reading
+5.6 Exercises
+6 High-dimensionalData
+6.1 High-dimensional Objects
+6.2 High-dimensional Volumes
+6.3 Hypersphere Inscribed within Hypercube
+6.4 Volume of Thin Hypersphere Shell
+6.5 Diagonals in Hyperspace
+6.6 Density of the Multivariate Normal
+6.7 Appendix: Derivation of Hypersphere Volume
+6.8 Further Reading
+6.9 Exercises
+7 DimensionalityReduction
+7.1 Background
+7.2 Principal Component Analysis
+7.3 Kernel Principal Component Analysis
+7.4 Singular Value Decomposition
+7.5 Further Reading
+7.6 Exercises
+PART TWO: FREQUENT PATTERN MINING
+8 ItemsetMining
+8.1 Frequent Itemsets and Association Rules
+8.2 Itemset Mining Algorithms
+8.3 Generating Association Rules
+8.4 Further Reading
+8.5 Exercises
+9 SummarizingItemsets
+9.1 Maximal and Closed Frequent Itemsets
+9.2 Mining Maximal Frequent Itemsets: GenMax Algorithm
+9.3 Mining Closed Frequent Itemsets: Charm Algorithm
+9.4 Nonderivable Itemsets
+9.5 Further Reading
+9.6 Exercises 256Contents vii
+10 SequenceMining
+10.1 Frequent Sequences
+10.2 Mining Frequent Sequences
+10.3 Substring Mining via Suffix Trees
+10.4 Further Reading
+10.5 Exercises
+11 GraphPatternMining
+11.1 Isomorphism and Support
+11.2 Candidate Generation
+11.3 The gSpan Algorithm
+11.4 Further Reading
+11.5 Exercises
+12 Patternand Rule Assessment
+12.1 Rule and Pattern Assessment Measures
+12.2 Significance Testing and Confidence Intervals
+12.3 Further Reading
+12.4 Exercises
+PART THREE: CLUSTERING
+13 Representative-basedClustering
+13.1 K-means Algorithm
+13.2 Kernel K-means
+13.3 Expectation-Maximization Clustering
+13.4 Further Reading
+13.5 Exercises
+14 HierarchicalClustering
+14.1 Preliminaries
+14.2 Agglomerative Hierarchical Clustering
+14.3 Further Reading
+14.4 Exercises and Projects
+15 Density-basedClustering
+15.1 The DBSCAN Algorithm
+15.2 Kernel Density Estimation
+15.3 Density-based Clustering: DENCLUE
+15.4 Further Reading
+15.5 Exercises
+16 Spectraland Graph Clustering
+16.1 Graphs and Matrices
+16.2 Clustering as Graph Cuts
+16.3 Markov Clustering
+16.4 Further Reading
+16.5 Exercises 423viii Contents
+17 ClusteringValidation
+17.1 External Measures
+17.2 Internal Measures
+17.3 Relative Measures
+17.4 Further Reading
+17.5 Exercises
+PART FOUR: CLASSIFICATION
+18 ProbabilisticClassification
+18.1 Bayes Classifier
+18.2 Naive Bayes Classifier
+18.3 KNearest Neighbors Classifier
+18.4 Further Reading
+18.5 Exercises
+19 DecisionTree Classifier
+19.1 Decision Trees
+19.2 Decision Tree Algorithm
+19.3 Further Reading
+19.4 Exercises
+20 LinearDiscriminantAnalysis
+20.1 Optimal Linear Discriminant
+20.2 Kernel Discriminant Analysis
+20.3 Further Reading
+20.4 Exercises
+21 Support Vector Machines
+21.1 Support Vectors and Margins
+21.2 SVM: Linear and Separable Case
+21.3 Soft Margin SVM: Linear and Nonseparable Case
+21.4 Kernel SVM: Nonlinear Case
+21.5 SVM Training Algorithms
+21.6 Further Reading
+21.7 Exercises
+22 ClassificationAssessment
+22.1 Classification Performance Measures
+22.2 Classifier Evaluation
+22.3 Bias-Variance Decomposition
+22.4 Further Reading
+22.5 Exercises
+}
+{### Table of contents:Contents
+Preface page x
+1 Deep Learning on Graphs: An Introduction
+1.1 Introduction
+1.2 Why Deep Learning on Graphs
+1.3 What Content is Covered
+1.4 Who Should Read the Book
+1.5 Feature Learning on Graphs: A Brief History
+1.5.1 Feature Selection on Graphs
+1.5.2 Representation Learning on Graphs
+1.6 Conclusion
+1.7 Further Reading
+PART ONE FOUNDATIONS
+2 Foundations of Graphs
+2.1 Introduction
+2.2 Graph Representations
+2.3 Properties and Measures
+2.3.1 Degree
+2.3.2 Connectivity
+2.3.3 Centrality
+2.4 Spectral Graph Theory
+2.4.1 Laplacian Matrix
+2.4.2 The Eigenvalues and Eigenvectors of the
+Laplacian Matrix
+2.5 Graph Signal Processing
+2.5.1 Graph Fourier Transform
+2.6 Complex Graphs
+2.6.1 Heterogeneous Graphs
+2.6.2 Bipartite Graphs
+2.6.3 Multi-dimensional Graphs
+2.6.4 Signed Graphs
+2.6.5 Hypergraphs
+2.6.6 Dynamic Graphs
+2.7 Computational Tasks on Graphs
+2.7.1 Node-focused Tasks
+2.7.2 Graph-focused Tasks
+2.8 Conclusion
+2.9 Further Reading
+3 Foundations of Deep Learning
+3.1 Introduction
+3.2 Feedforward Networks
+3.2.1 The Architecture
+3.2.2 Activation Functions
+3.2.3 Output Layer and Loss Function
+3.3 Convolutional Neural Networks
+3.3.1 The Convolution Operation and Convolutional
+Layer
+3.3.2 Convolutional Layers in Practice
+3.3.3 Non-linear Activation Layer
+3.3.4 Pooling Layer
+3.3.5 An Overall CNN Framework
+3.4 Recurrent Neural Networks
+3.4.1 The Architecture of Traditional RNNs
+3.4.2 Long Short-Term Memory
+3.4.3 Gated Recurrent Unit
+3.5 Autoencoders
+3.5.1 Undercomplete Autoencoders
+3.5.2 Regularized Autoencoders
+3.6 Training Deep Neural Networks
+3.6.1 Training with Gradient Descent
+3.6.2 Backpropagation
+3.6.3 Preventing Overﬁtting
+3.7 Conclusion
+3.8 Further Reading
+4 Graph Embedding
+4.1 Introduction
+4.2 Graph Embedding on Simple Graphs
+4.2.1 Preserving Node Co-occurrence
+4.2.2 Preserving Structural Role
+4.2.3 Preserving Node Status
+4.2.4 Preserving Community Structure
+4.3 Graph Embedding on Complex Graphs
+4.3.1 Heterogeneous Graph Embedding
+4.3.2 Bipartite Graph Embedding
+4.3.3 Multi-dimensional Graph Embedding
+4.3.4 Signed Graph Embedding
+4.3.5 Hypergraph Embedding
+4.3.6 Dynamic Graph Embedding
+4.4 Conclusion
+4.5 Further Reading
+5 Graph Neural Networks
+5.1 Introduction
+5.2 The General GNN Frameworks
+5.2.1 A General Framework for Node-focused Tasks
+5.2.2 A General Framework for Graph-focused Tasks
+5.3 Graph Filters
+5.3.1 Spectral-based Graph Filters
+5.3.2 Spatial-based Graph Filters
+5.4 Graph Pooling
+5.4.1 Flat Graph Pooling
+5.4.2 Hierarchical Graph Pooling
+5.5 Parameter Learning for Graph Neural Networks
+5.5.1 Parameter Learning for Node Classiﬁcation
+5.5.2 Parameter Learning for Graph Classiﬁcation
+5.6 Conclusion
+5.7 Further Reading
+6 Robust Graph Neural Networks
+6.1 Introduction
+6.2 Graph Adversarial Attacks
+6.2.1 Taxonomy of Graph Adversarial Attacks
+6.2.2 White-box Attack
+6.2.3 Gray-box Attack
+6.2.4 Black-box Attack
+6.3 Graph Adversarial Defenses
+6.3.1 Graph Adversarial Training
+6.3.2 Graph Puriﬁcation
+6.3.3 Graph Attention
+6.3.4 Graph Structure Learning
+6.4 Conclusion
+6.5 Further Reading
+7 Scalable Graph Neural Networks
+7.1 Introduction
+7.2 Node-wise Sampling Methods
+7.3 Layer-wise Sampling Methods
+7.4 Subgraph-wise Sampling Methods
+7.5 Conclusion
+7.6 Further Reading
+8 Graph Neural Networks on Complex Graphs
+8.1 Introduction
+8.2 Heterogeneous Graph Neural Networks
+8.3 Bipartite Graph Neural Networks
+8.4 Multi-dimensional Graph Neural Networks
+8.5 Signed Graph Neural Networks
+8.6 Hypergraph Neural Networks
+8.7 Dynamic Graph Neural Networks
+8.8 Conclusion
+8.9 Further Reading
+9 Beyond GNNs: More Deep Models on Graphs
+9.1 Introduction
+9.2 Autoencoders on Graphs
+9.3 Recurrent Neural Networks on Graphs
+9.4 Variational Autoencoders on Graphs
+9.4.1 Variational Autoencoders for Node Represen
+tation Learning
+9.4.2 Variational Autoencoders for Graph Generation
+9.5 Generative Adversarial Networks on Graphs
+9.5.1 Generative Adversarial Networks for Node
+Representation Learning
+9.5.2 Generative Adversarial Networks for Graph
+Generation
+9.6 Conclusion
+9.7 Further Reading
+PART THREE APPLICATIONS
+10 Graph Neural Networks in Natural Language Processing
+10.1 Introduction
+10.2 Semantic Role Labeling
+10.3 Neural Machine Translation
+10.4 Relation Extraction
+10.5 Question Answering
+10.5.1 The Multi-hop QA Task
+10.5.2 Entity-GCN
+10.6 Graph to Sequence Learning
+10.7 Graph Neural Networks on Knowledge Graphs
+10.7.1 Graph Filters for Knowledge Graphs
+10.7.2 Transforming Knowledge Graphs to Simple
+Graphs
+10.7.3 Knowledge Graph Completion
+10.8 Conclusion
+10.9 Further Reading
+11 Graph Neural Networks in Computer Vision
+11.1 Introduction
+11.2 Visual Question Answering
+11.2.1 Images as Graphs
+11.2.2 Images and Questions as Graphs
+11.3 Skeleton-based Action Recognition
+11.4 Image Classiﬁcation
+11.4.1 Zero-shot Image Classiﬁcation
+11.4.2 Few-shot Image Classiﬁcation
+11.4.3 Multi-label Image Classiﬁcation
+11.5 Point Cloud Learning
+11.6 Conclusion
+11.7 Further Reading
+12 Graph Neural Networks in Data Mining
+12.1 Introduction
+12.2 Web Data Mining
+12.2.1 Social Network Analysis
+12.2.2 Recommender Systems
+12.3 Urban Data Mining
+12.3.1 Tra c Prediction
+12.3.2 Air Quality Forecasting
+12.4 Cybersecurity Data Mining
+12.4.1 Malicious Account Detection
+12.4.2 Fake News Detection
+12.5 Conclusion
+12.6 Further Reading
+13 Graph Neural Networks in Biochemistry and Healthcare
+13.1 Introduction
+13.2 Drug Development and Discovery
+13.2.1 Molecule Representation Learning
+13.2.2 Protein Interface Prediction
+13.2.3 Drug-Target Binding A nity Prediction
+13.3 Drug Similarity Integration
+13.4 Polypharmacy Side E ect Prediction
+13.5 Disease Prediction
+13.6 Conclusion
+13.7 Further Reading
+PART FOUR ADV ANCES
+14 Advanced Topics in Graph Neural Networks
+14.1 Introduction
+14.2 Deeper Graph Neural Networks
+14.2.1 Jumping Knowledge
+14.2.2 DropEdge
+14.2.3 PairNorm
+14.3 Exploring Unlabeled Data via Self-supervised Learning
+14.3.1 Node-focused Tasks
+14.3.2 Graph-focused Tasks
+14.4 Expressiveness of Graph Neural Networks
+14.4.1 Weisfeiler-Lehman Test
+14.4.2 Expressiveness
+14.5 Conclusion
+14.6 Further Reading
+15 Advanced Applications in Graph Neural Networks
+15.1 Introduction
+15.2 Combinatorial Optimization on Graphs
+15.3 Learning Program Representations
+15.4 Reasoning Interacting Dynamical Systems in Physics
+15.5 Conclusion
+15.6 Further Reading
+ }
+{### Table of contents:Contents
+1 Regression I
+1.1 Ordinary Least Squares
+1.2 Ridge Regression
+1.3 Feature Engineering
+1.4 Hyperparameters and Validation
+2 Regression II
+2.1 MLE and MAP for Regression (Part I
+2.2 Bias-Variance Tradeo
+2.3 Multivariate Gaussians
+2.4 MLE and MAP for Regression (Part II
+2.5 Kernels and Ridge Regression
+2.6 Sparse Least Squares
+2.7 Total Least Squares
+3 Dimensionality Reduction
+3.1 Principal Component Analysis
+3.2 Canonical Correlation Analysis
+4 Beyond Least Squares: Optimization and Neural Networks
+4.1 Nonlinear Least Squares
+4.2 Optimization
+4.3 Gradient Descent
+4.4 Line Search
+4.5 Convex Optimization
+4.6 Newton's Method
+4.7 Gauss-Newton Algorithm
+4.8 Neural Networks
+4.9 Training Neural Networks
+34 CONTENTS
+5 Classication
+5.1 Generative vs. Discriminative Classication
+5.2 Least Squares Support Vector Machine
+5.3 Logistic Regression
+5.4 Gaussian Discriminant Analysis
+5.5 Support Vector Machines
+5.6 Duality
+5.7 Nearest Neighbor Classication
+6 Clustering
+6.1 K-means Clustering
+6.2 Mixture of Gaussians
+6.3 Expectation Maximization (EM) Algorithm
+7 Decision Tree Learning
+7.1 Decision Trees
+7.2 Random Forests
+7.3 Boosting
+8 Deep Learning
+8.1 Convolutional Neural Networks
+8.2 CNN Architectures
+8.3 Visualizing and Understanding CNNs  }
+{### Table of contents:Contents
+Preface page vii
+1 Introduction
+1.1 What Is Learning
+1.2 When Do We Need Machine Learning
+1.3 Types of Learning
+1.4 Relations to Other Fields
+1.5 How to Read This Book
+1.5.1 Possible Course Plans Based on This Book
+1.6 Notation
+Part I Foundations
+2 A Gentle Start
+2.1 A Formal Model The Statistical Learning Framework
+2.2 Empirical Risk Minimization
+2.2.1 Something May Go Wrong  Overtting
+2.3 Empirical Risk Minimization with Inductive Bias
+2.3.1 Finite Hypothesis Classes
+2.4 Exercises
+3 A Formal Learning Model
+3.1 PAC Learning
+3.2 A More General Learning Model
+3.2.1 Releasing the Realizability Assumption Agnostic PAC
+Learning
+3.2.2 The Scope of Learning Problems Modeled
+3.3 Summary
+3.4 Bibliographic Remarks
+3.5 Exercises
+4 Learning via Uniform Convergence
+4.1 Uniform Convergence Is Sucient for Learnability
+4.2 Finite Classes Are Agnostic PAC Learnable
+4.3 Summary
+4.4 Bibliographic Remarks
+4.5 Exercises
+5 The Bias-Complexity Tradeo
+5.1 The No-Free-Lunch Theorem
+5.1.1 No-Free-Lunch and Prior Knowledge
+5.2 Error Decomposition
+5.3 Summary
+5.4 Bibliographic Remarks
+5.5 Exercises
+6 The VC-Dimension
+6.1 Innite-Size Classes Can Be Learnable
+6.2 The VC-Dimension
+6.3 Examples
+6.3.1 Threshold Functions
+6.3.2 Intervals
+6.3.3 Axis Aligned Rectangles
+6.3.4 Finite Classes
+6.3.5 VC-Dimension and the Number of Parameters
+6.4 The Fundamental Theorem of PAC learning
+6.5 Proof of Theorem
+6.5.1 Sauer's Lemma and the Growth Function
+6.5.2 Uniform Convergence for Classes of Small Eective Size
+6.6 Summary
+6.7 Bibliographic remarks
+6.8 Exercises
+7 Nonuniform Learnability
+7.1 Nonuniform Learnability
+7.1.1 Characterizing Nonuniform Learnability
+7.2 Structural Risk Minimization
+7.3 Minimum Description Length and Occam's Razor
+7.3.1 Occam's Razor
+7.4 Other Notions of Learnability { Consistency 92
+7.5 Discussing the Dierent Notions of Learnability
+7.5.1 The No-Free-Lunch Theorem Revisited
+7.6 Summary
+7.7 Bibliographic Remarks
+7.8 Exercises
+8 The Runtime of Learning
+8.1 Computational Complexity of Learning 101Contents xi
+8.1.1 Formal Denition
+8.2 Implementing the ERM Rule
+8.2.1 Finite Classes
+8.2.2 Axis Aligned Rectangles
+8.2.3 Boolean Conjunctions
+8.2.4 Learning 3-Term DNF
+8.3 Eciently Learnable, but Not by a Proper ERM
+8.4 Hardness of Learning
+8.5 Summary
+8.6 Bibliographic Remarks
+8.7 Exercises
+Part II From Theory to Algorithms
+9 Linear Predictors
+9.1 Halfspaces
+9.1.1 Linear Programming for the Class of Halfspaces
+9.1.2 Perceptron for Halfspaces
+9.1.3 The VC Dimension of Halfspaces
+9.2 Linear Regression
+9.2.1 Least Squares
+9.2.2 Linear Regression for Polynomial Regression Tasks
+9.3 Logistic Regression
+9.4 Summary
+9.5 Bibliographic Remarks
+9.6 Exercises
+10 Boosting
+10.1 Weak Learnability
+10.1.1 Ecient Implementation of ERM for Decision Stumps
+10.2 AdaBoost
+10.3 Linear Combinations of Base Hypotheses
+10.3.1 The VC-Dimension of L(B;T
+10.4 AdaBoost for Face Recognition
+10.5 Summary
+10.6 Bibliographic Remarks
+10.7 Exercises
+11 Model Selection and Validation
+11.1 Model Selection Using SRM
+11.2 Validation
+11.2.1 Hold Out Set
+11.2.2 Validation for Model Selection
+11.2.3 The Model-Selection Curve 148xii Contents
+11.2.4k-Fold Cross Validation
+11.2.5 Train-Validation-Test Split
+11.3 What to Do If Learning Fails
+11.4 Summary
+11.5 Exercises
+12 Convex Learning Problems
+12.1 Convexity, Lipschitzness, and Smoothness
+12.1.1 Convexity
+12.1.2 Lipschitzness
+12.1.3 Smoothness
+12.2 Convex Learning Problems
+12.2.1 Learnability of Convex Learning Problems
+12.2.2 Convex-Lipschitz/Smooth-Bounded Learning Problems
+12.3 Surrogate Loss Functions
+12.4 Summary
+12.5 Bibliographic Remarks
+12.6 Exercises
+13 Regularization and Stability
+13.1 Regularized Loss Minimization
+13.1.1 Ridge Regression
+13.2 Stable Rules Do Not Overt
+13.3 Tikhonov Regularization as a Stabilizer
+13.3.1 Lipschitz Loss
+13.3.2 Smooth and Nonnegative Loss
+13.4 Controlling the Fitting-Stability Tradeo
+13.5 Summary
+13.6 Bibliographic Remarks
+13.7 Exercises
+14 Stochastic Gradient Descent
+14.1 Gradient Descent
+14.1.1 Analysis of GD for Convex-Lipschitz Functions
+14.2 Subgradients
+14.2.1 Calculating Subgradients
+14.2.2 Subgradients of Lipschitz Functions
+14.2.3 Subgradient Descent
+14.3 Stochastic Gradient Descent (SGD
+14.3.1 Analysis of SGD for Convex-Lipschitz-Bounded Functions
+14.4 Variants
+14.4.1 Adding a Projection Step
+14.4.2 Variable Step Size
+14.4.3 Other Averaging Techniques 195Contents xiii
+14.4.4 Strongly Convex Functions
+14.5 Learning with SGD
+14.5.1 SGD for Risk Minimization
+14.5.2 Analyzing SGD for Convex-Smooth Learning Problems
+14.5.3 SGD for Regularized Loss Minimization
+14.6 Summary
+14.7 Bibliographic Remarks
+14.8 Exercises
+15 Support Vector Machines
+15.1 Margin and Hard-SVM
+15.1.1 The Homogenous Case
+15.1.2 The Sample Complexity of Hard-SVM
+15.2 Soft-SVM and Norm Regularization
+15.2.1 The Sample Complexity of Soft-SVM
+15.2.2 Margin and Norm-Based Bounds versus Dimension
+15.2.3 The Ramp Loss
+15.3 Optimality Conditions and \Support Vectors
+15.4 Duality
+15.5 Implementing Soft-SVM Using SGD
+15.6 Summary
+15.7 Bibliographic Remarks
+15.8 Exercises
+16 Kernel Methods
+16.1 Embeddings into Feature Spaces
+16.2 The Kernel Trick
+16.2.1 Kernels as a Way to Express Prior Knowledge
+16.2.2 Characterizing Kernel Functions
+16.3 Implementing Soft-SVM with Kernels
+16.4 Summary
+16.5 Bibliographic Remarks
+16.6 Exercises
+17 Multiclass, Ranking, and Complex Prediction Problems
+17.1 One-versus-All and All-Pairs
+17.2 Linear Multiclass Predictors
+17.2.1 How to Construct
+17.2.2 Cost-Sensitive Classication
+17.2.3 ERM
+17.2.4 Generalized Hinge Loss
+17.2.5 Multiclass SVM and SGD
+17.3 Structured Output Prediction
+17.4 Ranking 238xiv Contents
+17.4.1 Linear Predictors for Ranking
+17.5 Bipartite Ranking and Multivariate Performance Measures
+17.5.1 Linear Predictors for Bipartite Ranking
+17.6 Summary
+17.7 Bibliographic Remarks
+17.8 Exercises
+18 Decision Trees
+18.1 Sample Complexity
+18.2 Decision Tree Algorithms
+18.2.1 Implementations of the Gain Measure
+18.2.2 Pruning
+18.2.3 Threshold-Based Splitting Rules for Real-Valued Features
+18.3 Random Forests
+18.4 Summary
+18.5 Bibliographic Remarks
+18.6 Exercises
+19 Nearest Neighbor
+19.1kNearest Neighbors
+19.2 Analysis
+19.2.1 A Generalization Bound for the 1-NN Rule
+19.2.2 The \Curse of Dimensionality
+19.3 Ecient Implementation
+19.4 Summary
+19.5 Bibliographic Remarks
+19.6 Exercises
+20 Neural Networks
+20.1 Feedforward Neural Networks
+20.2 Learning Neural Networks
+20.3 The Expressive Power of Neural Networks
+20.3.1 Geometric Intuition
+20.4 The Sample Complexity of Neural Networks
+20.5 The Runtime of Learning Neural Networks
+20.6 SGD and Backpropagation
+20.7 Summary
+20.8 Bibliographic Remarks
+20.9 Exercises
+Part III Additional Learning Models
+21 Online Learning
+21.1 Online Classication in the Realizable Case 288Contents xv
+21.1.1 Online Learnability
+21.2 Online Classication in the Unrealizable Case
+21.2.1 Weighted-Majority
+21.3 Online Convex Optimization
+21.4 The Online Perceptron Algorithm
+21.5 Summary
+21.6 Bibliographic Remarks
+21.7 Exercises
+22 Clustering
+22.1 Linkage-Based Clustering Algorithms
+22.2k-Means and Other Cost Minimization Clusterings
+22.2.1 The k-Means Algorithm
+22.3 Spectral Clustering
+22.3.1 Graph Cut
+22.3.2 Graph Laplacian and Relaxed Graph Cuts
+22.3.3 Unnormalized Spectral Clustering
+22.4 Information Bottleneck
+22.5 A High Level View of Clustering
+22.6 Summary
+22.7 Bibliographic Remarks
+22.8 Exercises
+23 Dimensionality Reduction
+23.1 Principal Component Analysis (PCA
+23.1.1 A More Ecient Solution for the Case dm
+23.1.2 Implementation and Demonstration
+23.2 Random Projections
+23.3 Compressed Sensing
+23.3.1 Proofs
+23.4 PCA or Compressed Sensing
+23.5 Summary
+23.6 Bibliographic Remarks
+23.7 Exercises
+24 Generative Models
+24.1 Maximum Likelihood Estimator
+24.1.1 Maximum Likelihood Estimation for Continuous Ran
+dom Variables
+24.1.2 Maximum Likelihood and Empirical Risk Minimization
+24.1.3 Generalization Analysis
+24.2 Naive Bayes
+24.3 Linear Discriminant Analysis
+24.4 Latent Variables and the EM Algorithm 348xvi Contents
+24.4.1 EM as an Alternate Maximization Algorithm
+24.4.2 EM for Mixture of Gaussians (Soft k-Means
+24.5 Bayesian Reasoning
+24.6 Summary
+24.7 Bibliographic Remarks
+24.8 Exercises
+25 Feature Selection and Generation
+25.1 Feature Selection
+25.1.1 Filters
+25.1.2 Greedy Selection Approaches
+25.1.3 Sparsity-Inducing Norms
+25.2 Feature Manipulation and Normalization
+25.2.1 Examples of Feature Transformations
+25.3 Feature Learning
+25.3.1 Dictionary Learning Using Auto-Encoders
+25.4 Summary
+25.5 Bibliographic Remarks
+25.6 Exercises
+Part IV Advanced Theory
+26 Rademacher Complexities
+26.1 The Rademacher Complexity
+26.1.1 Rademacher Calculus
+26.2 Rademacher Complexity of Linear Classes
+26.3 Generalization Bounds for SVM
+26.4 Generalization Bounds for Predictors with Low `1Norm
+26.5 Bibliographic Remarks
+27 Covering Numbers
+27.1 Covering
+27.1.1 Properties
+27.2 From Covering to Rademacher Complexity via Chaining
+27.3 Bibliographic Remarks
+28 Proof of the Fundamental Theorem of Learning Theory
+28.1 The Upper Bound for the Agnostic Case
+28.2 The Lower Bound for the Agnostic Case
+28.2.1 Showing That m(;)0:5 log
+28.2.2 Showing That m(;1=8)8d
+28.3 The Upper Bound for the Realizable Case
+28.3.1 From -Nets to PAC Learnability 401Contents xvii
+29 Multiclass Learnability
+29.1 The Natarajan Dimension
+29.2 The Multiclass Fundamental Theorem
+29.2.1 On the Proof of Theorem
+29.3 Calculating the Natarajan Dimension
+29.3.1 One-versus-All Based Classes
+29.3.2 General Multiclass-to-Binary Reductions
+29.3.3 Linear Multiclass Predictors
+29.4 On Good and Bad ERMs
+29.5 Bibliographic Remarks
+29.6 Exercises
+30 Compression Bounds
+30.1 Compression Bounds
+30.2 Examples
+30.2.1 Axis Aligned Rectangles
+30.2.2 Halfspaces
+30.2.3 Separating Polynomials
+30.2.4 Separation with Margin
+30.3 Bibliographic Remarks
+31 PAC-Bayes
+31.1 PAC-Bayes Bounds
+31.2 Bibliographic Remarks
+31.3 Exercises
+}
