@@ -1,0 +1,927 @@
+Book Title: Algorithms Unplugged
+Contents
+Part I Searching and Sorting
+    Overview
+    Martin Dietzfelbinger and Christian Scheideler
+    1 Binary Search
+    Thomas Seidl and Jost Enderle
+    2 Insertion Sort
+    Wolfgang P. Kowalk
+    3 Fast Sorting Algorithms
+    Helmut Alt
+    4 Parallel Sorting – The Need for Speed
+    Rolf Wanka
+    5 Topological Sorting – How Should I Begin to Complete My
+    To Do List
+    Hagen H¨ opfner
+    6 Searching Texts – But Fast! The Boyer–Moore–Horspool
+    Algorithm
+    Markus E. Nebel
+    7 Depth-First Search (Ariadne&Co
+    Michael Dom, Falk H¨ uﬀner, and Rolf Niedermeier
+    8 Pledge’s Algorithm
+    Rolf Klein and Tom Kamphans
+    9 Cycles in Graphs
+    Holger Schlinglo
+    10 PageRank – What Is Really Relevant in the World-Wide
+    Web
+    Ulrik Brandes and Gabi Dorfm¨ uller
+Part II Arithmetic and Encryption
+    Overview
+    Berthold V¨ ocking
+    11 Multiplication of Long Integers – Faster than Long
+    Multiplication
+    Arno Eigenwillig and Kurt Mehlhorn
+    12 The Euclidean Algorithm
+    Friedrich Eisenbrand
+    13 The Sieve of Eratosthenes – How Fast Can We Compute a
+    Prime Number Table
+    Rolf H. M¨ ohring and Martin Oellrich
+    14 One-Way Functions. Mind the Trap – Escape Only for the
+    Initiated
+    R¨udiger Reischuk and Markus Hinkelmann
+    15 The One-Time Pad Algorithm – The Simplest and Most
+    Secure Way to Keep Secrets
+    Till Tantau
+    16 Public-Key Cryptography
+    Dirk Bongartz and Walter Unger
+    17 How to Share a Secret
+    Johannes Bl¨ omer
+    18 Playing Poker by Email
+    Detlef Sieling
+    19 Fingerprinting
+    Martin Dietzfelbinger
+    20 Hashing
+    Christian Schindelhauer
+    21 Codes – Protecting Data Against Errors and Loss
+    Michael Mitzenmacher
+Part III Planning, Coordination and Simulation
+    Overview
+    Helmut Alt and R¨ udiger Reischuk
+    22 Broadcasting – How Can I Quickly Disseminate
+    Information
+    Christian Scheideler
+    23 Converting Numbers into English Words
+    Lothar Schmitz
+    24 Majority – Who Gets Elected Class Rep
+    Thomas Erlebach
+    25 Random Numbers – How Can We Create Randomness in
+    Computers
+    Bruno M¨ uller-Clostermann and Tim Jonischkat
+    26 Winning Strategies for a Matchstick Game
+    Jochen K¨ onemann
+    27 Scheduling of Tournaments or Sports Leagues
+    Sigrid Knust
+    28 Eulerian Circuits
+    Michael Behrisch, Amin Coja-Oghlan, and Peter Liske
+    29 High-Speed Circles
+    Dominik Sibbing and Leif Kobbelt
+    30 Gauß–Seidel Iterative Method for the Computation of
+    Physical Problems
+    Christoph Freundl and Ulrich R¨ ude
+    31 Dynamic Programming – Evolutionary Distance
+    Norbert Blum and Matthias Kretschmer
+Part IV Optimization
+    Overview
+    Heribert Vollmer and Dorothea Wagner
+    32 Shortest Paths
+    Peter Sanders and Johannes Singler
+    3 3 Minimum Spanning Trees (Sometimes Greed Pays)
+    Katharina Skutella and Martin Skutella
+    34 Maximum Flows – Towards the Stadium During Rush
+    HourRobert G¨ orke, Steﬀen Mecke, and Dorothea Wagner
+    35 Marriage Broker
+    Volker Claus, Volker Diekert, and Holger Petersen
+    36 The Smallest Enclosing Circle – A Contribution to
+    Democracy from Switzerland?Emo Welzl
+    37 Online Algorithms – What Is It Worth to Know the
+    Future
+    Susanne Albers and Swen Schmelzer
+    38 Bin Packing or “How Do I Get My Stuﬀ into the Boxes
+    Joachim Gehweiler and Friedhelm Meyer auf der Heide
+    39 The Knapsack Problem
+    Rene Beier and Berthold V¨ ocking
+    40 The Travelling Salesman Problem
+    Stefan N¨ aher
+    41 Simulated Annealing
+    Peter Rossmanith
+    Author Details
+
+
+Book Title: Data Structures And Algorithmic Thinking With Python
+Table of Contents
+0. Organization of Chapters
+    0.1 What ls This Book About
+    0.2 Should I Buy This Book
+    0.3 Organization of Chapters
+    0.4 Some Prerequisites
+1. Introduction
+    1.1 Variables
+    1.2 Data Types
+    1.3 Data Structures
+    1.4 Abstract Data Types (ADTs)
+    1.5 What is an Algorithm
+    1.6 Why the Analysis of Algorithms
+    1.7 Goal or the Analysis or Algorithms
+    1.8 What is Running Time Analysis
+    1.9 how to Compare Algorithms
+    1.10 What is Rate or Growth
+    1.11 Commonly Used Rates or Growth
+    1.12 Types of Analysis
+    1.13 Asymptotic Notation
+    1.14 Big- 0 Notation
+    1.15 Omega Notation
+    1.16 Theta Notation
+    1.17 Why is it called Asymptotic Analysis
+    1.18 Guidelines for Asymptotic Analysis
+    1.19 Properties or Notations
+    1.20 Commonly used Logarithms and Summations
+    1.21 Master Theorem for Divide and Conquer
+    1.22 Divide and Conquer Master Theorem: Problems & Solutions
+    1.23 Master Theorem for Subtract and Conquer Recurrences
+    1.24 Variant or Subtraction and Conquer Master Theorem
+    1.25 Method or Guessing and Confirming
+    1.26 Amortized Analysis
+    1.27 Algorithms Analysis: Problems & Solutions
+2. Recursion and Backtracking
+    2.1 Introduction
+    2.2 What is Recursion?
+    2.3 Why Recursion?
+    2.4 Format or a Recursive Function
+    2.5 Recursion and Memory (Visualization)
+    2.6 Recursion versus Iteration
+    2.7 Notes on Recursion
+    2.8 Example Algorithms of Recursion
+    2.9 Recursion: Problems & Solu lions
+    2.10 What is Buck tracking
+    2.11 Example Algorithms of Backtracking
+    2.12 Backtracking: Problems & Solutions
+3. Linked Lists
+    3.1 What is a Linked List
+    3.2 Linked Lists ADT
+    3.3 Why linked Lists?
+    3.4 Arrays Overview
+    3.5 Comparison of Linked Lists with Arrays and Dynamic Arrays
+    3.6 Singly Lin keel Lists
+    3.7 Doubly Linked Lists
+    3.8 Circular Linked Lists
+    3.9 A Memory efficient Doubly Linked List
+    3.10 Unrolled Linked Lists
+    3.11 Skip Lists
+    3.12 Linked Lists: Problems & Solutions
+4. Stacks
+    4.1 What is a stack?
+    4.2 How Stacks are Used?
+    4.3 Stack ADT
+    4.4 Applications
+    4.5 Implementation
+    4.6 Comparison of Implementations
+    4.7 Stack: Problems & Solutions
+5. Queues
+    5.1 What is Queue?
+    5.2 How are Queues Used?
+    5.3 Queue ADT
+    5.4 Exceptions
+    5.5 Applications
+    5.6 Implementation
+    5.7 Queues: Problems & Solutions
+6. Trees
+    6.1 What is Binary Tree?
+    6.2 Glossary
+    6.3 Binary Trees
+    6.4 Types of Binary Trees
+    6.5 Properties of Binary Trees
+    6.6 Binary Tree Traversals
+    6.7 Generic Trees (N-ary Trees)
+    6.8 Threaded Binary Tree Traversals (Stack or Queue-less Traversals)
+    6.9 Expression Trees
+    6.10 XOR Trees
+    6.11 Binary Search Trees (BSTs)
+    6.12 Balanced Binary Search Trees
+    6.13 A VL (Adelson-Velskii and Landis) Trees
+    6.14 Other Variations on Trees
+7. Priority Queues and Heaps
+    7.1 What is a Priority Queue?
+    7.2 Priority Queue ADT
+    7.3 Priority Queue Applications
+    7.4 Priority Queue Implementations
+    7.5 Heaps and Binary Heaps
+    7.6 Binary Heaps
+    7.7 Heapsort
+    7.8 Priority Queues [Heaps]: Problems & Solutions
+8. Disjoint Sets ADT
+    8.1 Introduction
+    8.2 Equivalence Relations and Equivalence Classes
+    8.3 Disjoint Sets ADT
+    8.4 Applications
+    8.5 Tradeoffs in Implementing Disjoint Sets ADT
+    8.8 Fast UNION Implementation (Slow FIND)
+    8.9 Fast UNION Implementations (Quick FIND)
+    8.10 Summary
+    8.11 Disjoint Sets: Problems & Solutions
+9. Graph Algorithms
+    9.1 Introduction
+    9.2 Glossary
+    9.3 Applications of Graphs
+    9.4 Graph Representation
+    9.5 Graph Traversals
+    9.6 Topological Sort
+    9.7 Shortest Path Algorithms
+    9.8 Minimal Spanning Tree
+    9.9 Graph Algorithms: Problems & Solutions
+10. Sorting
+    10.1 What is sorting?
+    10.2 Why is Sorting Necessary?
+    10.3 Classification of Sorting Algorithms
+    10.4 Other Classifications
+    10.5 Bubble Sort
+    1O.6 Selection Sort
+    10.7 Insertion Sort
+    10.8 Shell Sort
+    10.9 Merge Sort
+    10.10 Heap Sort
+    10.11 Quick Sort
+    10.12 Tree Sort
+    10.13 Comparison of Sorting Algorithms
+    10.14 Linear Sorting Algorithms
+    10.15 Counting Sort
+    10.16 Bucket Sort (or Bin Sort)
+    10.17 Radix Sort
+    10.18 Topological Sort
+    10.19 External Sorting
+    10.20 Sorting: Problems & Solutions
+11. Searching
+    11.1 What is Searching?
+    11.2 Why do we need Searching?
+    11.3 Types of Searching
+    11.4 Unordered Linear Search
+    11.5 Sorted/ Ordered Linear Search
+    11.6 Binary Search
+    11.7 Interpolation Search
+    11.8 Comparing Basic Searching Algorithms
+    11. 9 Symbol Tables and Hashing
+    11.10 String Searching Algorithms
+    11.11 Searching: Problems & Solutions
+12. Selection Algorithms [Medians]
+    12.1 What are Selection Algorithms
+    12.2 Selection by Sorting
+    12 3 Partition-based Selection Algorithm
+    12.4 Linear Selection Algorithm - Median of Medians Algorithm
+    12.5 Finding the K Smallest Elements in Sorted Order
+    12.6 Selection Algorithms: Problems & Solutions
+13. Symbol Tables
+    13.1 Introduction
+    13.2 What are Symbol Tables?
+    13.3 Symbol Table Implementation
+    13.4 Comparison Table of Symbols for Implementations
+14. Hashing
+    14.1 What is Hashing?
+    14.2 Why Hashing?
+    14.3 HashTable ADT
+    14.4 Understanding Hashing
+    14.5 Components of Hashing
+    14.6 Hash Table
+    14.7 Hash Function
+    14.8 Load Factor
+    14.9 Collisions
+    14.10 Collision Resolution Techniques
+    14.11 Separate Chaining
+    14.12 Open Addressing
+    14.13 Comparison of Collision Resolution Techniques
+    14.14 How Hashing Gets 0(1) Complexity
+    14.15 Hashing Techniques
+    14.16 Problems for which Hash Tables are not suitable
+    14.17 Bloom Filters
+    14.18 Hashing: Problems & Solutions
+15. String Algorithms
+    15.1 Introduction
+    15.2 String Matching Algorithm
+    15.3 Brute Force Method
+    15.4 Robin-Karp String Matching Algorithm
+    15.5 String Matching with Finite Automata
+    15.6 KMP Algorithm
+    15.7 Boyce-Moore Algorithm
+    15.8 Data Structures for Storing Strings
+    15.9 Hash Tables for Strings
+    15.10 Binary Search Trees for Strings
+    15.11 Tries
+    15.12 Ternary Search Trees
+    15.13 Comparing BSTs, Tries and TSTs
+    15.14 Suffix Trees
+    15.15 String Algorithms: Problems & Solutions
+16. Algori Lh ms Design Techniques
+    16.1 Introduction
+    16.2 Classification
+    16.3 Classification by Implementation Method
+    16.4 Classification by Design Method
+    16.5 Other Classifications
+17. Greedy Algorithms
+    17.1 Introduction
+    17.2 Greedy Strategy
+    17.3 Elements of Greedy Algorithms
+    17.4 Docs Greedy Always Work
+    17.5 Advantages and Disadvantages of Greedy Method
+    17.6 Greedy Applications
+    17.7 Understanding Greedy Technique
+    17.8 Greedy Algorithms: Problems & Solutions
+18. Divide and Conquer Algorithms
+    18.1 Introduction
+    18.2 What is Divide and Conquer Strategy
+    18.3 Docs Divide and Conquer Always Work
+    18.4 Divide t1 ncl Conquer Visualization
+    18.5 Understanding Divide and Conquer
+    18.6 Advantages of Divide and Conquer
+    18.7 Disadvantages of Divide and Conquer
+    18.8 Master Theorem
+    18.9 Divide und Conquer Applications
+    18.10 Divide nnd Conquer: Problems & Solutions
+19. Dynamic Programming
+    19.1 Introduction
+    19.2 What is Dynamic Programming Strategy?
+    19.3 Properties of Dynamic Programming Strategy
+    19.4 Can Dynamic Programming Solve All Problem?
+    19.5 Dynamic Programming Approaches
+    19.6 Examples of Dynamic Programming Algorithms
+    19.7 Understanding Dynamic Programming
+    19.8 Longest Common Subsequence
+    19.9 Dynamic Programming: Problems & Solutions
+20. Complexity Classes
+    20.1 Introduction
+    20.2 Polynomial/ Exponential Time
+    20.3 What is a Decision Problem?
+    20.4 Decision Procedure
+    20.5 What is a Complexity Class?
+    20.6 Types of Complexity Classes
+    20.7 Reductions
+    20.8 Complexity Classes: Problems & Solutions
+21. Miscellaneous Concepts
+    21.1 Introduction
+    21.2 Hack in Bitwise  Programming
+    21.3 Other Programming Questions with Solutions
+References
+
+
+Book Title: Design Patterns: Elements of Reusable Object-Oriented Software
+Contents
+Preface
+Foreword
+Guide to Readers
+1. Introduction
+    1.1 What Is a Design Pattern
+    1.2 Design Patterns in Smalltalk MVC
+    1.3 Describing Design Patterns
+    1.4 The Catalog of Design Patterns
+    1.5 Organizing the Catalog
+    1.6 How Design Patterns Solve Design Problems
+    1.7 How to Select a Design Pattern
+    1.8 How to Use a Design Pattern
+2. A Case Study: Designing a Document Editor
+    2.1 Design Problems
+    2.2 Document Structure
+    2.3 Formatting
+    2.4 Embellishing the User Interface
+    2.5 Supporting Multiple Look-and-Feel Standards
+    2.6 Supporting Multiple Window Systems
+    2.7 User Operations i
+    2.8 Spelling Checking and Hyphenation
+    2.9 Summary
+Design Pattern Catalog
+3. CreationalPatterns
+    Abstract Factory
+    Builder
+    Factory Method
+    Prototype
+    Singleton
+    Discussion of Creational Patterns
+4. Structural Patterns
+    Adapter
+    Bridge
+    Composite
+    Decorator
+    Facade
+    Flyweight
+    Proxy
+    Discussion of Structural Patterns
+5. Behavioral Patterns
+    Chain of Responsibility
+    Command
+    Interpreter
+    Iterator
+    Mediator
+    Memento
+    Observer
+    State
+    Strategy
+    Template Method
+    Visitor
+    Discussion of Behavioral Patterns
+6. Conclusion
+    6.1 What to Expect from Design Patterns
+    6.2 A Brief History
+    6.3 The Pattern Community
+    6.4 An Invitation
+    6.5 A Parting Thought
+A. Glossary
+B. Guide to Notation
+    B.I Class Diagram
+    B.2 Object Diagram
+    B.3 Interaction Diagram
+C. Foundation Classes
+    C.1 List
+    C.2 Iterator
+    C.3 ListIterator
+    C.4 Point
+    C.5 Rect
+Bibliography
+Index
+
+
+Book Title: Designing Data-Intensive Applications; The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
+Preface
+Part I. Foundations of Data Systems
+    1. Reliable, Scalable, and Maintainable Applications
+        Thinking About Data Systems
+        Reliability
+            Hardware Faults
+            Software Errors
+            Human Errors
+            How Important Is Reliability
+        Scalability
+            Describing Load
+            Describing Performance
+            Approaches for Coping with Load
+        Maintainability
+            Operability: Making Life Easy for Operations
+            Simplicity: Managing Complexity
+            Evolvability: Making Change Easy
+        Summary
+    2. Data Models and Query Languages
+        Relational Model Versus Document Model
+            The Birth of NoSQL
+            The Object-Relational Mismatch
+            Many-to-One and Many-to-Many Relationships
+            Are Document Databases Repeating History
+            Relational Versus Document Databases Today
+        Query Languages for Data
+            Declarative Queries on the Web
+            MapReduce Querying
+        Graph-Like Data Models
+            Property Graphs
+            The Cypher Query Language
+            Graph Queries in SQL
+            Triple-Stores and SPARQL
+            The Foundation: Datalog
+        Summary
+    3. Storage and Retrieval
+        Data Structures That Power Your Database
+            Hash Indexes
+            SSTables and LSM-Trees
+            B-Trees
+            Comparing B-Trees and LSM-Trees
+            Other Indexing Structures
+        Transaction Processing or Analytics
+            Data Warehousing
+            Stars and Snowflakes: Schemas for Analytics
+        Column-Oriented Storage
+            Column Compression
+            Sort Order in Column Storage
+            Writing to Column-Oriented Storage
+            Aggregation: Data Cubes and Materialized Views
+        Summary
+    4. Encoding and Evolution
+        Formats for Encoding Data
+            Language-Specific Formats
+            JSON, XML, and Binary Variants
+            Thrift and Protocol Buffers
+            Avro
+            The Merits of Schemas
+        Modes of Dataflow
+            Dataflow Through Databases
+            Dataflow Through Services: REST and RPC
+            Message-Passing Dataflow
+        Summary
+Part II. Distributed Data
+    5. Replication
+        Leaders and Followers
+            Synchronous Versus Asynchronous Replication
+            Setting Up New Followers
+            Handling Node Outages
+            Implementation of Replication Logs
+        Problems with Replication Lag
+            Reading Your Own Writes
+            Monotonic Reads
+            Consistent Prefix Reads
+            Solutions for Replication Lag
+        Multi-Leader Replication
+            Use Cases for Multi-Leader Replication
+            Handling Write Conflicts
+            Multi-Leader Replication Topologies
+        Leaderless Replication
+            Writing to the Database When a Node Is Down
+            Limitations of Quorum Consistency
+            Sloppy Quorums and Hinted Handoff
+            Detecting Concurrent Writes
+        Summary
+    6. Partitioning
+        Partitioning and Replication
+        Partitioning of Key-Value Data
+            Partitioning by Key Range
+            Partitioning by Hash of Key
+            Skewed Workloads and Relieving Hot Spots
+        Partitioning and Secondary Indexes
+            Partitioning Secondary Indexes by Document
+            Partitioning Secondary Indexes by Term
+        Rebalancing Partitions
+            Strategies for Rebalancing
+            Operations: Automatic or Manual Rebalancing
+        Request Routing
+            Parallel Query Execution
+        Summary
+    7. Transactions
+        The Slippery Concept of a Transaction
+            The Meaning of ACID
+            Single-Object and Multi-Object Operations
+        Weak Isolation Levels
+            Read Committed
+            Snapshot Isolation and Repeatable Read
+            Preventing Lost Updates
+            Write Skew and Phantoms
+        Serializability
+            Actual Serial Execution
+            Two-Phase Locking (2PL)
+            Serializable Snapshot Isolation (SSI)
+        Summary
+    8. The Trouble with Distributed Systems
+        Faults and Partial Failures
+            Cloud Computing and Supercomputing
+        Unreliable Networks
+            Network Faults in Practice
+            Detecting Faults
+            Timeouts and Unbounded Delays
+            Synchronous Versus Asynchronous Networks
+        Unreliable Clocks
+            Monotonic Versus Time-of-Day Clocks
+            Clock Synchronization and Accuracy
+            Relying on Synchronized Clocks
+            Process Pauses
+        Knowledge, Truth, and Lies
+            The Truth Is Defined by the Majority
+            Byzantine Faults
+            System Model and Reality
+        Summary
+    9. Consistency and Consensus
+        Consistency Guarantees
+        Linearizability
+            What Makes a System Linearizable
+            Relying on Linearizability
+            Implementing Linearizable Systems
+            The Cost of Linearizability
+        Ordering Guarantees
+            Ordering and Causality
+            Sequence Number Ordering
+            Total Order Broadcast
+        Distributed Transactions and Consensus
+            Atomic Commit and Two-Phase Commit (2PC)
+            Distributed Transactions in Practice
+            Fault-Tolerant Consensus
+            Membership and Coordination Services
+        Summary
+Part III. Derived Data
+    10. Batch Processing
+        Batch Processing with Unix Tools
+            Simple Log Analysis
+            The Unix Philosophy
+        MapReduce and Distributed Filesystems
+            MapReduce Job Execution
+            Reduce-Side Joins and Grouping
+            Map-Side Joins
+            The Output of Batch Workflows
+            Comparing Hadoop to Distributed Databases
+        Beyond MapReduce
+            Materialization of Intermediate State
+            Graphs and Iterative Processing
+            High-Level APIs and Languages
+        Summary
+    11. Stream Processing
+        Transmitting Event Streams
+            Messaging Systems
+            Partitioned Logs
+        Databases and Streams
+            Keeping Systems in Sync
+            Change Data Capture
+            Event Sourcing
+            State, Streams, and Immutability
+        Processing Streams
+            Uses of Stream Processing
+            Reasoning About Time
+            Stream Joins
+            Fault Tolerance
+        Summary
+    12. The Future of Data Systems
+        Data Integration
+                Combining Specialized Tools by Deriving Data
+                Batch and Stream Processing
+            Unbundling Databases
+                Composing Data Storage Technologies
+                Designing Applications Around Dataflow
+                Observing Derived State
+            Aiming for Correctness
+                The End-to-End Argument for Databases
+                Enforcing Constraints
+                Timeliness and Integrity
+                Trust, but Verify
+            Doing the Right Thing
+                Predictive Analytics
+                Privacy and Tracking
+            Summary
+Glossary
+Index
+
+
+Book Title: Python Data Analytics; Data Analysis and Science Using Pandas, matplotlib, and the Python Programming Language
+Contents
+About the Author
+About the Technical Reviewer
+Acknowledgments
+Chapter 1: An Introduction to Data Analysis
+    Data Analysis
+    Knowledge Domains of the Data Analyst
+        Computer Science
+        Mathematics and Statistics
+        Machine Learning and Artificial Intelligence
+        Professional Fields of Application
+    Understanding the Nature of the Data
+        When the Data Become Information
+        When the Information Becomes Knowledge
+        Types of Data
+    The Data Analysis Process
+        Problem Definition
+        Data Extraction
+        Data Preparation
+        Data Exploration/Visualization
+        Predictive Modeling
+        Model Validation
+        Deployment
+    Quantitative and Qualitative Data Analysis
+        Open Data
+        Python and Data Analysis
+        Conclusions
+Chapter 2: Introduction to the Python’s World
+    Python—The Programming Language
+    Python—The Interpreter
+        Cython
+        Jython
+        PyPy
+    Python 2 and Python
+    Installing Python
+    Python Distributions
+        Anaconda
+        Enthought Canopy
+        Python(x,y)
+    Using Python
+        Python Shell
+        Run an Entire Program Code
+        Implement the Code Using an IDE
+        Interact with Python
+    Writing Python Code
+        Make Calculations
+        Import New Libraries and Functions
+        Functional Programming (Only for Python)
+        Indentation
+    IPython
+        IPython Shell
+        IPython Qt-Console
+    PyPI—The Python Package Index
+    The IDEs for Python
+        IDLE (Integrated DeveLopment Environment)
+        Spyder
+        Eclipse (pyDev)
+        Sublime
+        Liclipse
+        NinjaIDE
+        Komodo IDE
+    SciPy
+        NumPy
+        Pandas
+        matplotlib
+    Conclusions
+Chapter 3: The NumPy Library
+    NumPy: A Little History
+    The NumPy Installation
+    Ndarray: The Heart of the Library
+        Create an Array
+        Types of Data
+        The dtype Option
+        Intrinsic Creation of an Array
+    Basic Operations
+        Arithmetic Operators
+        The Matrix Product
+        Increment and Decrement Operators
+        Universal Functions (ufunc
+        Aggregate Functions
+    Indexing, Slicing, and Iterating
+        Indexing
+        Slicing
+        Iterating an Array
+    Conditions and Boolean Arrays
+    Shape Manipulation
+    Array Manipulation
+        Joining Arrays
+        Splitting Arrays
+    General Concepts
+        Copies or Views of Objects
+        Vectorization
+        Broadcasting
+    Structured Arrays
+    Reading and Writing Array Data on Files
+        Loading and Saving Data in Binary Files
+        Reading File with Tabular Data
+    Conclusions
+Chapter 4: The pandas Library—An Introduction
+    pandas: The Python Data Analysis Library
+    Installation
+        Installation from Anaconda
+        Installation from PyPI
+        Installation on Linux
+        Installation from Source
+        A Module Repository for Windows
+    Test Your pandas Installation
+    Getting Started with pandas
+    Introduction to pandas Data Structures
+        The Series
+        The DataFrame
+        The Index Objects
+    Other Functionalities on Indexes
+        Reindexing
+        Dropping
+        Arithmetic and Data Alignment
+    Operations between Data Structures
+        Flexible Arithmetic Methods
+        Operations between DataFrame and Series
+    Function Application and Mapping
+        Functions by Element
+        Functions by Row or Column
+        Statistics Functions
+    Sorting and Ranking
+    Correlation and Covariance
+    “Not a Number” Data
+        Assigning a NaN Value
+        Filtering Out NaN Values
+        Filling in NaN Occurrences
+    Hierarchical Indexing and Leveling
+        Reordering and Sorting Levels
+        Summary Statistic by Level
+    Conclusions
+Chapter 5: pandas: Reading and Writing Data
+    I/O API Tools
+    CSV and Textual Files
+    Reading Data in CSV or Text Files
+        Using RegExp for Parsing TXT Files
+        Reading TXT Files into Parts or Partially
+        Writing Data in CSV
+    Reading and Writing HTML Files
+        Writing Data in HTML
+        Reading Data from an HTML File
+    Reading Data from XML
+    Reading and Writing Data on Microsoft Excel Files
+    JSON Data
+    The Format HDF
+    Pickle—Python Object Serialization
+        Serialize a Python Object with cPickle
+        Pickling with pandas
+    Interacting with Databases
+        Loading and Writing Data with SQLite
+        Loading and Writing Data with PostgreSQL
+    Reading and Writing Data with a NoSQL Database: MongoDB
+    Conclusions
+Chapter 6: pandas in Depth: Data Manipulation
+    Data Preparation
+        Merging
+    Concatenating
+        Combining
+        Pivoting
+        Removing
+    Data Transformation
+        Removing Duplicates
+        Mapping
+    Discretization and Binning
+        Detecting and Filtering Outliers
+    Permutation
+    String Manipulation
+        Built-in Methods for Manipulation of Strings
+        Regular Expressions
+    Data Aggregation
+        GroupBy
+        A Practical Example
+        Hierarchical Grouping
+    Group Iteration
+        Chain of Transformations
+        Functions on Groups
+    Advanced Data Aggregation
+    Conclusions
+Chapter 7: Data Visualization with matplotlib
+    The matplotlib Library
+    Installation
+    IPython and IPython QtConsole
+    matplotlib Architecture
+        Backend Layer
+        Artist Layer
+        Scripting Layer (pyplot
+        pylab and pyplot
+    pyplot
+        A Simple Interactive Chart
+        Set the Properties of the Plot
+        matplotlib and NumPy
+    Using the kwargs
+        Working with Multiple Figures and Axes
+    Adding Further Elements to the Chart
+        Adding Text
+        Adding a Grid
+        Adding a Legend
+    Saving Your Charts
+        Saving the Code
+        Converting Your Session as an HTML File
+        Saving Your Chart Directly as an Image
+    Handling Date Values
+    Chart Typology
+    Line Chart
+        Line Charts with pandas
+    Histogram
+    Bar Chart
+        Horizontal Bar Chart
+        Multiserial Bar Chart
+        Multiseries Bar Chart with pandas DataFrame
+        Multiseries Stacked Bar Charts
+        Stacked Bar Charts with pandas DataFrame
+        Other Bar Chart Representations
+    Pie Charts
+        Pie Charts with pandas DataFrame
+    Advanced Charts
+        Contour Plot
+        Polar Chart
+    mplot3d
+        3D Surfaces
+        Scatter Plot in 3D
+        Bar Chart 3D
+    Multi-Panel Plots
+        Display Subplots within Other Subplots
+        Grids of Subplots
+    Conclusions
+Chapter 8: Machine Learning with scikit-learn
+    The scikit-learn Library
+    Machine Learning
+        Supervised and Unsupervised Learning
+        Training Set and Testing Set
+    Supervised Learning with scikit-learn
+    The Iris Flower Dataset
+        The PCA Decomposition
+    K-Nearest Neighbors Classifier
+    Diabetes Dataset
+    Linear Regression: The Least Square Regression
+    Support Vector Machines (SVMs)
+        Support Vector Classification (SVC)
+        Nonlinear SVC
+        Plotting Different SVM Classifiers Using the Iris Dataset
+        Support Vector Regression (SVR)
+    Conclusions
+Chapter 9: An Example—Meteorological Data
+    A Hypothesis to Be Tested: The Influence of the Proximity of the Sea
+        The System in the Study: The Adriatic Sea and the Po Valley
+    Data Source
+    Data Analysis on IPython Notebook
+    The RoseWind
+        Calculating the Distribution of the Wind Speed Means
+    Conclusions
+Chapter 10: Embedding the JavaScript D3 Library in IPython Notebook
+    The Open Data Source for Demographics
+    The JavaScript D3 Library
+    Drawing a Clustered Bar Chart
+    The Choropleth Maps
+    The Choropleth Map of the US Population in
+    Conclusions
+Chapter 11: Recognizing Handwritten Digits
+    Handwriting Recognition
+    Recognizing Handwritten Digits with scikit-learn
+    The Digits Dataset
+    Learning and Predicting
+    Conclusions
+Appendix A: Writing Mathematical Expressions with LaTeX
+    With matplotlib
+    With IPython Notebook in a Markdown Cell
+    With IPython Notebook in a Python 2 Cell
+    Subscripts and Superscripts
+    Fractions, Binomials, and Stacked Numbers
+    Radicals
+    Fonts
+    Accents
+Appendix B: Open Data Sources
+    Political and Government Data
+    Health Data
+    Social Data
+    Miscellaneous and Public Data Sets
+    Financial Data
+    Climatic Data
+    Sports Data
+    Publications, Newspapers, and Books
+    Musical Data
+Index
