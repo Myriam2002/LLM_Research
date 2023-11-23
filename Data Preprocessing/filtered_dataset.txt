@@ -1,0 +1,1257 @@
+Book Title: (Adaptive Computation and Machine Learning series) Ian Goodfellow, Yoshua Bengio, Aaron Courville - Deep Learning-The MIT Press (2016)
+Website
+Introduction
+  Who should read the Book
+  Historical Trends in Deep Learning
+--- Applied Math & ML Basics
+Linear Algebra
+  Scalars, Vectors, Matrices & Tensors
+  Multiplying Matrices & Vectors
+  Identity & Inverse Matrices
+  Linear Dependence & Span
+  Norms
+  Special Kinds of Matrices & Vectors
+  Eigendecomposition
+  Singular Value Decomposition
+  Moore-Penrose Pseudoinverse
+  Trace Operator
+  Determinant
+  Example - Principal Components Analysis
+Probability & Information Theory
+  Why Probability
+  Random Variables
+  Probability Distributions
+  Marginal Probability
+  Conditional Probability
+  Chain Rule of Conditional Probabilities
+  Independence & Conditional Independence
+  Expectation, Variance & Covariance
+  Common Probability Distributions
+  Properties of Common Functions
+  Bayes Rule
+  Technical Details of Continuous Variables
+  Information Theory
+  Structured Probabilistic Models
+Numerical Computation
+  Overﬂow & Underﬂow
+  Poor Conditioning
+  Gradient-based Optimization
+  Constrained Optimization
+  Example - Linear Least Squares
+Machine Learning Basics
+  Learning Algorithms
+  Capacity, Overﬁtting & Underﬁtting
+  Hyperparameters & Validation Sets
+  Estimators, Bias & Variance
+  Maximum Likelihood Estimation
+  Bayesian Statistics
+  Supervised Learning Algorithms
+  Unsupervised Learning Algorithms
+  Stochastic Gradient Descent
+  Building ML Algorithm
+  Challenges motivating Deep Learning
+--- Deep Networks Modern Practices
+Deep Feedforward Networks
+  Example - Learning XOR
+  Gradient-based Learning
+  Hidden Units
+  Architecture Design
+  Back-Propagation & other Differentiation Algorithms
+  Historical Notes
+Regularization for Deep Learning
+  Parameter Norm Penalties
+  Norm Penalties as Constrained Optimization
+  Regularization & Under-Constrained Problems
+  Dataset Augmentation
+  Noise Robustness
+  Semi-Supervised Learning
+  Multitask Learning
+  Early Stopping
+  Parameter Tying & Parameter Sharing
+  Sparse Representations
+  Bagging & other Ensemble Methods
+  Dropout
+  Adversarial Training
+  Tangent Distance, Tangent Prop & Manifold Tangent Classiﬁer
+Optimization for Training Deep Models
+  How Learning differs from Pure Optimization
+  Challenges in NN Optimization
+  Basic Algorithms
+  Parameter Initialization Strategies
+  Algorithms with Adaptive Learning Rates
+  Approximate 2nd-Order Methods
+  Optimization Strategies & Meta-Algorithms
+Convolutional Networks
+  Convolution Operation
+  Motivation
+  Pooling
+  Convolution & Pooling as Inﬁnitely Strong Prior
+  Variants of Basic Convolution Function
+  Structured Outputs
+  Data Types
+  Eﬃcient Convolution Algorithms
+  Random or Unsupervised Features
+  Neuroscientiﬁc Basis for Convolutional Networks
+  Convolutional Networks & History of Deep Learning
+Sequence Modeling - Recurrent & Recursive Nets
+  Unfolding Computational Graphs
+  Recurrent Neural Networks
+  Bidirectional RNNs
+  Encoder-Decoder Sequence-to-Sequence Architectures
+  Deep Recurrent Networks
+  Recursive Neural Networks
+  Challenge of Long-Term Dependencies
+  Echo State Networks
+  Leaky Units & other Strategies for Multiple Time Scales
+  Long Short-Term Memory & other Gated RNNs
+  Optimization for Long-Term Dependencies
+  Explicit Memory
+Practical Methodology
+  Performance Metrics
+  Default Baseline Models
+  Determining whether to gather more Data
+  Selecting Hyperparameters
+  Debugging Strategies
+  Example - Multi-Digit Number Recognition
+Applications
+  Large-Scale Deep Learning
+  Computer Vision
+  Speech Recognition
+  Natural Language Processing
+  Other Applications
+--- Deep Learning Research
+Linear Factor Models
+  Probabilistic PCA & Factor Analysis
+  Independent Component Analysis (ICA)
+  Slow Feature Analysis
+  Sparse Coding
+  Manifold Interpretation of PCA
+Autoencoders
+  Undercomplete Autoencoders
+  Regularized Autoencoders
+  Representational Power, Layer Size & Depth
+  Stochastic Encoders & Decoders
+  Denoising Autoencoders
+  Learning Manifolds with Autoencoders
+  Contractive Autoencoders
+  Predictive Sparse Decomposition
+  Applications of Autoencoders
+Representation Learning
+  Greedy Layer-wise Unsupervised Pretraining
+  Transfer Learning & Domain Adaptation
+  Semi-Supervised Disentangling of Causal Factors
+  Distributed Representation
+  Exponential Gains from Depth
+  Providing Clues to Discover Underlying Causes
+Structured Probabilistic Models for Deep Learning
+  Challenge of Unstructured Modeling
+  Graphs to describe Model Structure
+  Sampling from Graphical Models
+  Advantages of Structured Modeling
+  Learning about Dependencies
+  Inference & Approximate Inference
+  Deep Learning Approach to Structured Probabilistic Models
+Monte Carlo Methods
+  Sampling & Monte Carlo Methods
+  Importance Sampling
+  Markov Chain Monte Carlo Methods
+  Gibbs Sampling
+  Challenge of Mixing btw Separated Modes
+Confronting the Partition Function
+  Log-Likelihood Gradient
+  Stochastic Maximum Likelihood & Contrastive Divergence
+  Pseudolikelihood
+  Score Matching & Ratio Matching
+  Denoising Score Matching
+  Noise-Contrastive Estimation
+  Estimating the Partition Function
+Approximate Inference
+  Inference as Optimization
+  Expectation Maximization
+  MAP Inference & Sparse Coding
+  Variational Inference & Learning
+  Learned Approximate Inference
+Deep Generative Models
+  Boltzmann Machines
+  Restricted Boltzmann Machines
+  Deep Belief Networks
+  Deep Boltzmann Machines
+  Boltzmann Machines for Real-Valued Data
+  Convolutional Boltzmann Machines
+  Boltzmann Machines for Structured or Sequential Outputs
+  Other Boltzmann Machines
+  Back-Propagation through Random Operations
+  Directed Generative Nets
+  Drawing Samples from Autoencoders
+  Generative Stochastic Networks
+  Other Generation Schemes
+  Evaluating Generative Models
+  Conclusion
+Biblio
+Index
+
+Book Title: Approaching any ML Problem
+
+Book Title: Dive into Deep Learning Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola
+Preface
+Installation
+Introduction
+  A Motivating Example
+  The Key Components: Data, Models, and Algorithms
+    Data
+    Models
+    Objective functions
+    Optimization algorithms
+  Kinds of Machine Learning
+    Supervised learning
+    Unsupervised learning
+    Interacting with an Environment
+    Reinforcement learning
+  Roots
+  The Road to Deep Learning
+  Success Stories
+Preliminaries
+  Data Manipulation
+    Getting Started
+    Operations
+    Broadcasting Mechanism
+    Indexing and Slicing
+    Saving Memory
+    Conversion to Other Python Objects
+  Data Preprocessing
+    Reading the Dataset
+    Handling Missing Data
+    Conversion to the Tensor Format
+  Linear Algebra
+    Scalars
+    Vectors
+    Matrices
+    Tensors
+    Basic Properties of Tensor Arithmetic
+    Reduction
+    Dot Products
+    Matrix-Vector Products
+    Matrix-Matrix Multiplication
+    Norms
+    More on Linear Algebra
+  Calculus
+    Derivatives and Differentiation
+    Partial Derivatives
+    Gradients
+    Chain Rule
+  Automatic Differentiation
+    A Simple Example
+    Backward for Non-Scalar Variables
+    Detaching Computation
+    Computing the Gradient of Python Control Flow
+  Probability
+    Basic Probability Theory
+    Dealing with Multiple Random Variables
+    Expectation and Variance
+  Documentation
+    Finding All the Functions and Classes in a Module
+    Finding the Usage of Specific Functions and Classes
+Linear Neural Networks
+  Linear Regression
+    Basic Elements of Linear Regression
+    Vectorization for Speed
+    The Normal Distribution and Squared Loss
+    From Linear Regression to Deep Networks
+  Linear Regression Implementation from Scratch
+    Generating the Dataset
+    Reading the Dataset
+    Initializing Model Parameters
+    Defining the Model
+    Defining the Loss Function
+    Defining the Optimization Algorithm
+    Training
+  Concise Implementation of Linear Regression
+    Generating the Dataset
+    Reading the Dataset
+    Defining the Model
+    Initializing Model Parameters
+    Defining the Loss Function
+    Defining the Optimization Algorithm
+    Training
+  Softmax Regression
+    Classification Problem
+    Network Architecture
+    Softmax Operation
+    Vectorization for Minibatches
+    Loss Function
+    Information Theory Basics
+    Model Prediction and Evaluation
+  The Image Classification Dataset
+    Reading the Dataset
+    Reading a Minibatch
+    Putting All Things Together
+  Implementation of Softmax Regression from Scratch
+    Initializing Model Parameters
+    Defining the Softmax Operation
+    Defining the Model
+    Defining the Loss Function
+    Classification Accuracy
+    Training
+    Prediction
+  Concise Implementation of Softmax Regression
+    Initializing Model Parameters
+    Softmax Implementation Revisited
+    Optimization Algorithm
+    Training
+Multilayer Perceptrons
+  Multilayer Perceptrons
+    Hidden Layers
+    Activation Functions
+  Implementation of Multilayer Perceptrons from Scratch
+    Initializing Model Parameters
+    Activation Function
+    Model
+    Loss Function
+    Training
+  Concise Implementation of Multilayer Perceptrons
+    Model
+  Model Selection, Underfitting, and Overfitting
+    Training Error and Generalization Error
+    Model Selection
+    Underfitting or Overfitting?
+    Polynomial Regression
+  Weight Decay
+    Norms and Weight Decay
+    High-Dimensional Linear Regression
+    Implementation from Scratch
+    Concise Implementation
+  Dropout
+    Overfitting Revisited
+    Robustness through Perturbations
+    Dropout in Practice
+    Implementation from Scratch
+    Concise Implementation
+  Forward Propagation, Backward Propagation, and Computational Graphs
+    Forward Propagation
+    Computational Graph of Forward Propagation
+    Backpropagation
+    Training Neural Networks
+  Numerical Stability and Initialization
+    Vanishing and Exploding Gradients
+    Parameter Initialization
+  Environment and Distribution Shift
+    Types of Distribution Shift
+    Examples of Distribution Shift
+    Correction of Distribution Shift
+    A Taxonomy of Learning Problems
+    Fairness, Accountability, and Transparency in Machine Learning
+  Predicting House Prices on Kaggle
+    Downloading and Caching Datasets
+    Kaggle
+    Accessing and Reading the Dataset
+    Data Preprocessing
+    Training
+    K-Fold Cross-Validation
+    Model Selection
+    Submitting Predictions on Kaggle
+Deep Learning Computation
+  Layers and Blocks
+    A Custom Block
+    The Sequential Block
+    Executing Code in the Forward Propagation Function
+    Compilation
+  Parameter Management
+    Parameter Access
+    Parameter Initialization
+    Tied Parameters
+  Deferred Initialization
+    Instantiating a Network
+  Custom Layers
+    Layers without Parameters
+    Layers with Parameters
+  File I/O
+    Loading and Saving Tensors
+    Loading and Saving Model Parameters
+  GPUs
+    Computing Devices
+    Tensors and GPUs
+    Neural Networks and GPUs
+Convolutional Neural Networks
+  From Fully-Connected Layers to Convolutions
+    Invariance
+    Constraining the MLP
+    Convolutions
+    “Where’s Waldo” Revisited
+  Convolutions for Images
+    The Cross-Correlation Operation
+    Convolutional Layers
+    Object Edge Detection in Images
+    Learning a Kernel
+    Cross-Correlation and Convolution
+    Feature Map and Receptive Field
+  Padding and Stride
+    Padding
+    Stride
+  Multiple Input and Multiple Output Channels
+    Multiple Input Channels
+    Multiple Output Channels
+    11 Convolutional Layer
+  Pooling
+    Maximum Pooling and Average Pooling
+    Padding and Stride
+    Multiple Channels
+  Convolutional Neural Networks (LeNet)
+    LeNet
+    Training
+Modern Convolutional Neural Networks
+  Deep Convolutional Neural Networks (AlexNet)
+    Learning Representations
+    AlexNet
+    Reading the Dataset
+    Training
+  Networks Using Blocks (VGG)
+    VGG Blocks
+    VGG Network
+    Training
+  Network in Network (NiN)
+    NiN Blocks
+    NiN Model
+    Training
+  Networks with Parallel Concatenations (GoogLeNet)
+    Inception Blocks
+    GoogLeNet Model
+    Training
+  Batch Normalization
+    Training Deep Networks
+    Batch Normalization Layers
+    Implementation from Scratch
+    Applying Batch Normalization in LeNet
+    Concise Implementation
+    Controversy
+  Residual Networks (ResNet)
+    Function Classes
+    Residual Blocks
+    ResNet Model
+    Training
+  Densely Connected Networks (DenseNet)
+    From ResNet to DenseNet
+    Dense Blocks
+    Transition Layers
+    DenseNet Model
+    Training
+Recurrent Neural Networks
+  Sequence Models
+    Statistical Tools
+    A Toy Example
+    Predictions
+  Text Preprocessing
+    Reading the Dataset
+    Tokenization
+    Vocabulary
+    Putting All Things Together
+  Language Models and the Dataset
+    Estimating a Language Model
+    Markov Models and n-grams
+    Natural Language Statistics
+    Training Data Preparation
+  Recurrent Neural Networks
+    Recurrent Networks Without Hidden States
+    Recurrent Networks with Hidden States
+    Steps in a Language Model
+    Perplexity
+  Implementation of Recurrent Neural Networks from Scratch
+    One-hot Encoding
+    Initializing the Model Parameters
+    RNN Model
+    Prediction
+    Gradient Clipping
+    Training
+  Concise Implementation of Recurrent Neural Networks
+    Defining the Model
+    Training and Predicting
+  Backpropagation Through Time
+    A Simplified Recurrent Network
+    The Computational Graph
+    BPTT in Detail
+Modern Recurrent Neural Networks
+  Gated Recurrent Units (GRU)
+    Gating the Hidden State
+    Implementation from Scratch
+    Concise Implementation
+  Long Short Term Memory (LSTM)
+    Gated Memory Cells
+    Implementation from Scratch
+    Concise Implementation
+  Deep Recurrent Neural Networks
+    Functional Dependencies
+    Concise Implementation
+    Training
+  Bidirectional Recurrent Neural Networks
+    Dynamic Programming
+    Bidirectional Model
+  Machine Translation and the Dataset
+    Reading and Preprocessing the Dataset
+    Tokenization
+    Vocabulary
+    Loading the Dataset
+    Putting All Things Together
+  Encoder-Decoder Architecture
+    Encoder
+    Decoder
+    Model
+  Sequence to Sequence
+    Encoder
+    Decoder
+    The Loss Function
+    Training
+    Predicting
+  Beam Search
+    Greedy Search
+    Exhaustive Search
+    Beam Search
+Attention Mechanisms
+  Attention Mechanisms
+    Dot Product Attention
+    MLP Attention
+  Sequence to Sequence with Attention Mechanisms
+    Decoder
+    Training
+  Transformer
+    Multi-Head Attention
+    Position-wise Feed-Forward Networks
+    Add and Norm
+    Positional Encoding
+    Encoder
+    Decoder
+    Training
+Optimization Algorithms
+  Optimization and Deep Learning
+    Optimization and Estimation
+    Optimization Challenges in Deep Learning
+  Convexity
+    Basics
+    Properties
+    Constraints
+  Gradient Descent
+    Gradient Descent in One Dimension
+    Multivariate Gradient Descent
+    Adaptive Methods
+  Stochastic Gradient Descent
+    Stochastic Gradient Updates
+    Dynamic Learning Rate
+    Convergence Analysis for Convex Objectives
+    Stochastic Gradients and Finite Samples
+  Minibatch Stochastic Gradient Descent
+    Vectorization and Caches
+    Minibatches
+    Reading the Dataset
+    Implementation from Scratch
+    Concise Implementation
+  Momentum
+    Basics
+    Practical Experiments
+    Theoretical Analysis
+  Adagrad
+    Sparse Features and Learning Rates
+    Preconditioning
+    The Algorithm
+    Implementation from Scratch
+    Concise Implementation
+  RMSProp
+    The Algorithm
+    Implementation from Scratch
+    Concise Implementation
+  Adadelta
+    The Algorithm
+    Implementation
+  Adam
+    The Algorithm
+    Implementation
+    Yogi
+  Learning Rate Scheduling
+    Toy Problem
+    Schedulers
+    Policies
+Computational Performance
+  Compilers and Interpreters
+    Symbolic Programming
+    Hybrid Programming
+    HybridSequential
+  Asynchronous Computation
+    Asynchrony via Backend
+    Barriers and Blockers
+    Improving Computation
+    Improving Memory Footprint
+  Automatic Parallelism
+    Parallel Computation on CPUs and GPUs
+    Parallel Computation and Communication
+  Hardware
+    Computers
+    Memory
+    Storage
+    CPUs
+    GPUs and other Accelerators
+    Networks and Buses
+    More Latency Numbers
+  Training on Multiple GPUs
+    Splitting the Problem
+    Data Parallelism
+    A Toy Network
+    Data Synchronization
+    Distributing Data
+    Training
+    Experiment
+  Concise Implementation for Multiple GPUs
+    A Toy Network
+    Parameter Initialization and Logistics
+    Training
+    Experiments
+  Parameter Servers
+    Data Parallel Training
+    Ring Synchronization
+    Multi-Machine Training
+    (key,value) Stores
+Computer Vision
+  Image Augmentation
+    Common Image Augmentation Method
+    Using an Image Augmentation Training Model
+  Fine-Tuning
+    Hot Dog Recognition
+  Object Detection and Bounding Boxes
+    Bounding Box
+  Anchor Boxes
+    Generating Multiple Anchor Boxes
+    Intersection over Union
+    Labeling Training Set Anchor Boxes
+    Bounding Boxes for Prediction
+  Multiscale Object Detection
+  The Object Detection Dataset
+    Downloading the Dataset
+    Reading the Dataset
+    Demonstration
+  Single Shot Multibox Detection (SSD)
+    Model
+    Training
+    Prediction
+  Region-based CNNs (R-CNNs)
+    R-CNNs
+    Fast R-CNN
+    Faster R-CNN
+    Mask R-CNN
+  Semantic Segmentation and the Dataset
+    Image Segmentation and Instance Segmentation
+    The Pascal VOC2012 Semantic Segmentation Dataset
+  Transposed Convolution
+    Basic 2D Transposed Convolution
+    Padding, Strides, and Channels
+    Analogy to Matrix Transposition
+  Fully Convolutional Networks (FCN)
+    Constructing a Model
+    Initializing the Transposed Convolution Layer
+    Reading the Dataset
+    Training
+    Prediction
+  Neural Style Transfer
+    Technique
+    Reading the Content and Style Images
+    Preprocessing and Postprocessing
+    Extracting Features
+    Defining the Loss Function
+    Creating and Initializing the Composite Image
+    Training
+  Image Classification (CIFAR-10) on Kaggle
+    Obtaining and Organizing the Dataset
+    Image Augmentation
+    Reading the Dataset
+    Defining the Model
+    Defining the Training Functions
+    Training and Validating the Model
+    Classifying the Testing Set and Submitting Results on Kaggle
+  Dog Breed Identification (ImageNet Dogs) on Kaggle
+    Obtaining and Organizing the Dataset
+    Image Augmentation
+    Reading the Dataset
+    Defining the Model
+    Defining the Training Functions
+    Training and Validating the Model
+    Classifying the Testing Set and Submitting Results on Kaggle
+Natural Language Processing: Pretraining
+  Word Embedding (word2vec)
+    Why Not Use One-hot Vectors?
+    The Skip-Gram Model
+    The Continuous Bag of Words (CBOW) Model
+  Approximate Training
+    Negative Sampling
+    Hierarchical Softmax
+  The Dataset for Pretraining Word Embedding
+    Reading and Preprocessing the Dataset
+    Subsampling
+    Loading the Dataset
+    Putting All Things Together
+  Pretraining word2vec
+    The Skip-Gram Model
+    Training
+    Applying the Word Embedding Model
+  Word Embedding with Global Vectors (GloVe)
+    The GloVe Model
+    Understanding GloVe from Conditional Probability Ratios
+  Subword Embedding
+    fastText
+    Byte Pair Encoding
+  Finding Synonyms and Analogies
+    Using Pretrained Word Vectors
+    Applying Pretrained Word Vectors
+  Bidirectional Encoder Representations from Transformers (BERT)
+    From Context-Independent to Context-Sensitive
+    From Task-Specific to Task-Agnostic
+    BERT: Combining the Best of Both Worlds
+    Input Representation
+    Pretraining Tasks
+    Putting All Things Together
+  The Dataset for Pretraining BERT
+    Defining Helper Functions for Pretraining Tasks
+    Transforming Text into the Pretraining Dataset
+  Pretraining BERT
+    Pretraining BERT
+    Representing Text with BERT
+Natural Language Processing: Applications
+  Sentiment Analysis and the Dataset
+    The Sentiment Analysis Dataset
+    Putting All Things Together
+  Sentiment Analysis: Using Recurrent Neural Networks
+    Using a Recurrent Neural Network Model
+  Sentiment Analysis: Using Convolutional Neural Networks
+    One-Dimensional Convolutional Layer
+    Max-Over-Time Pooling Layer
+    The TextCNN Model
+  Natural Language Inference and the Dataset
+    Natural Language Inference
+    The Stanford Natural Language Inference (SNLI) Dataset
+  Natural Language Inference: Using Attention
+    The Model
+    Training and Evaluating the Model
+  Fine-Tuning BERT for Sequence-Level and Token-Level Applications
+    Single Text Classification
+    Text Pair Classification or Regression
+    Text Tagging
+    Question Answering
+  Natural Language Inference: Fine-Tuning BERT
+    Loading Pretrained BERT
+    The Dataset for Fine-Tuning BERT
+    Fine-Tuning BERT
+Recommender Systems
+  Overview of Recommender Systems
+    Collaborative Filtering
+    Explicit Feedback and Implicit Feedback
+    Recommendation Tasks
+  The MovieLens Dataset
+    Getting the Data
+    Statistics of the Dataset
+    Splitting the dataset
+    Loading the data
+  Matrix Factorization
+    The Matrix Factorization Model
+    Model Implementation
+    Evaluation Measures
+    Training and Evaluating the Model
+  AutoRec: Rating Prediction with Autoencoders
+    Model
+    Implementing the Model
+    Reimplementing the Evaluator
+    Training and Evaluating the Model
+  Personalized Ranking for Recommender Systems
+    Bayesian Personalized Ranking Loss and its Implementation
+    Hinge Loss and its Implementation
+  Neural Collaborative Filtering for Personalized Ranking
+    The NeuMF model
+    Model Implementation
+    Customized Dataset with Negative Sampling
+    Evaluator
+    Training and Evaluating the Model
+  Sequence-Aware Recommender Systems
+    Model Architectures
+    Model Implementation
+    Sequential Dataset with Negative Sampling
+    Load the MovieLens 100K dataset
+    Train the Model
+  Feature-Rich Recommender Systems
+    An Online Advertising Dataset
+    Dataset Wrapper
+  Factorization Machines
+    2-Way Factorization Machines
+    An Efficient Optimization Criterion
+    Model Implementation
+    Load the Advertising Dataset
+    Train the Model
+  Deep Factorization Machines
+    Model Architectures
+    Implemenation of DeepFM
+    Training and Evaluating the Model
+Generative Adversarial Networks
+  Generative Adversarial Networks
+    Generate some “real” data
+    Generator
+    Discriminator
+    Training
+  Deep Convolutional Generative Adversarial Networks
+    The Pokemon Dataset
+    The Generator
+    Discriminator
+    Training
+Appendix: Mathematics for Deep Learning
+  Geometry and Linear Algebraic Operations
+    Geometry of Vectors
+    Dot Products and Angles
+    Hyperplanes
+    Geometry of Linear Transformations
+    Linear Dependence
+    Rank
+    Invertibility
+    Determinant
+    Tensors and Common Linear Algebra Operations
+  Eigendecompositions
+    Finding Eigenvalues
+    Decomposing Matrices
+    Operations on Eigendecompositions
+    Eigendecompositions of Symmetric Matrices
+    Gershgorin Circle Theorem
+    A Useful Application: The Growth of Iterated Maps
+    Conclusions
+  Single Variable Calculus
+    Differential Calculus
+    Rules of Calculus
+  Multivariable Calculus
+    Higher-Dimensional Differentiation
+    Geometry of Gradients and Gradient Descent
+    A Note on Mathematical Optimization
+    Multivariate Chain Rule
+    The Backpropagation Algorithm
+    Hessians
+    A Little Matrix Calculus
+  Integral Calculus
+    Geometric Interpretation
+    The Fundamental Theorem of Calculus
+    Change of Variables
+    A Comment on Sign Conventions
+    Multiple Integrals
+    Change of Variables in Multiple Integrals
+  Random Variables
+    Continuous Random Variables
+  Maximum Likelihood
+    The Maximum Likelihood Principle
+    Numerical Optimization and the Negative Log-Likelihood
+    Maximum Likelihood for Continuous Variables
+  Distributions
+    Bernoulli
+    Discrete Uniform
+    Continuous Uniform
+    Binomial
+    Poisson
+    Gaussian
+    Exponential Family
+  Naive Bayes
+    Optical Character Recognition
+    The Probabilistic Model for Classification
+    The Naive Bayes Classifier
+    Training
+  Statistics
+    Evaluating and Comparing Estimators
+    Conducting Hypothesis Tests
+    Constructing Confidence Intervals
+  Information Theory
+    Information
+    Entropy
+    Mutual Information
+    Kullback–Leibler Divergence
+    Cross Entropy
+Appendix: Tools for Deep Learning
+  Using Jupyter
+    Editing and Running the Code Locally
+    Advanced Options
+  Using Amazon SageMaker
+    Registering and Logging In
+    Creating a SageMaker Instance
+    Running and Stopping an Instance
+    Updating Notebooks
+  Using AWS EC2 Instances
+    Creating and Running an EC2 Instance
+    Installing CUDA
+    Installing MXNet and Downloading the D2L Notebooks
+    Running Jupyter
+    Closing Unused Instances
+  Using Google Colab
+  Selecting Servers and GPUs
+    Selecting Servers
+    Selecting GPUs
+  Contributing to This Book
+    Minor Text Changes
+    Propose a Major Change
+    Adding a New Section or a New Framework Implementation
+    Submitting a Major Change
+  d2l API Document
+Bibliography
+Python Module Index
+Index
+
+Book Title: Hands_on_Machine_Learning_with_Scikit_Le
+Cover
+Copyright
+Table of Contents
+Chapter 1. The Machine Learning Landscape
+  What Is Machine Learning?
+  Why Use Machine Learning?
+  Types of Machine Learning Systems
+    Supervised/Unsupervised Learning
+    Batch and Online Learning
+    Instance-Based Versus Model-Based Learning
+  Main Challenges of Machine Learning
+    Insufficient Quantity of Training Data
+    Nonrepresentative Training Data
+    Poor-Quality Data
+    Irrelevant Features
+    Overfitting the Training Data
+    Underfitting the Training Data
+    Stepping Back
+  Testing and Validating
+  Exercises
+Chapter 2. End-to-End Machine Learning Project
+  Working with Real Data
+  Look at the Big Picture
+    Frame the Problem
+    Select a Performance Measure
+    Check the Assumptions
+  Get the Data
+    Create the Workspace
+    Download the Data
+    Take a Quick Look at the Data Structure
+    Create a Test Set
+  Discover and Visualize the Data to Gain Insights
+    Visualizing Geographical Data
+    Looking for Correlations
+    Experimenting with Attribute Combinations
+  Prepare the Data for Machine Learning Algorithms
+    Data Cleaning
+    Handling Text and Categorical Attributes
+    Custom Transformers
+    Feature Scaling
+    Transformation Pipelines
+  Select and Train a Model
+    Training and Evaluating on the Training Set
+    Better Evaluation Using Cross-Validation
+  Fine-Tune Your Model
+    Grid Search
+    Randomized Search
+    Ensemble Methods
+    Analyze the Best Models and Their Errors
+    Evaluate Your System on the Test Set
+  Launch, Monitor, and Maintain Your System
+  Try It Out!
+  Exercises
+Chapter 3. Classification
+  MNIST
+  Training a Binary Classifier
+  Performance Measures
+    Measuring Accuracy Using Cross-Validation
+    Confusion Matrix
+    Precision and Recall
+    Precision/Recall Tradeoff
+    The ROC Curve
+  Multiclass Classification
+  Error Analysis
+  Multilabel Classification
+  Multioutput Classification
+  Exercises
+Chapter 4. Training Models
+  Linear Regression
+    The Normal Equation
+    Computational Complexity
+  Gradient Descent
+    Batch Gradient Descent
+    Stochastic Gradient Descent
+    Mini-batch Gradient Descent
+  Polynomial Regression
+  Learning Curves
+  Regularized Linear Models
+    Ridge Regression
+    Lasso Regression
+    Elastic Net
+    Early Stopping
+  Logistic Regression
+    Estimating Probabilities
+    Training and Cost Function
+    Decision Boundaries
+    Softmax Regression
+  Exercises
+Chapter 5. Support Vector Machines
+  Linear SVM Classification
+    Soft Margin Classification
+  Nonlinear SVM Classification
+    Polynomial Kernel
+    Adding Similarity Features
+    Gaussian RBF Kernel
+    Computational Complexity
+  SVM Regression
+  Under the Hood
+    Decision Function and Predictions
+    Training Objective
+    Quadratic Programming
+    The Dual Problem
+    Kernelized SVM
+    Online SVMs
+  Exercises
+Chapter 6. Decision Trees
+  Training and Visualizing a Decision Tree
+  Making Predictions
+  Estimating Class Probabilities
+  The CART Training Algorithm
+  Computational Complexity
+  Gini Impurity or Entropy?
+  Regularization Hyperparameters
+  Regression
+  Instability
+  Exercises
+Chapter 7. Ensemble Learning and Random Forests
+  Voting Classifiers
+  Bagging and Pasting
+    Bagging and Pasting in Scikit-Learn
+    Out-of-Bag Evaluation
+  Random Patches and Random Subspaces
+  Random Forests
+    Extra-Trees
+    Feature Importance
+  Boosting
+    AdaBoost
+    Gradient Boosting
+  Stacking
+  Exercises
+Chapter 8. Dimensionality Reduction
+  The Curse of Dimensionality
+  Main Approaches for Dimensionality Reduction
+    Projection
+    Manifold Learning
+  PCA
+    Preserving the Variance
+    Principal Components
+    Projecting Down to d Dimensions
+    Using Scikit-Learn
+    Explained Variance Ratio
+    Choosing the Right Number of Dimensions
+    PCA for Compression
+    Randomized PCA
+    Incremental PCA
+  Kernel PCA
+    Selecting a Kernel and Tuning Hyperparameters
+  LLE
+    Other Dimensionality Reduction Techniques
+  Exercises
+Chapter 9. Unsupervised Learning Techniques
+  Clustering
+    K-Means
+    Limits of K-Means
+    Using clustering for image segmentation
+    Using Clustering for Preprocessing
+    Using Clustering for Semi-Supervised Learning
+    DBSCAN
+    Other Clustering Algorithms
+  Gaussian Mixtures
+    Anomaly Detection using Gaussian Mixtures
+    Selecting the Number of Clusters
+    Bayesian Gaussian Mixture Models
+    Other Anomaly Detection and Novelty Detection Algorithms
+About the Author
+Colophon
+
+Book Title: Machine Learning for Humans
+
+Book Title: machine-learning-absolute-beginners-introduction-2nd
+INTRODUCTION
+WHAT IS MACHINE LEARNING?
+ML CATEGORIES
+THE ML TOOLBOX
+DATA SCRUBBING
+SETTING UP YOUR DATA
+REGRESSION ANALYSIS
+CLUSTERING
+BIAS & VARIANCE
+ARTIFICIAL NEURAL NETWORKS
+DECISION TREES
+ENSEMBLE MODELING
+BUILDING A MODEL IN PYTHON
+MODEL OPTIMIZATION
+FURTHER RESOURCES
+DOWNLOADING DATASETS
+FINAL WORD
+
+Book Title: MATHEMATICS FOR MACHINE Learning
+Foreword
+Part I Mathematical Foundations
+  1 Introduction and Motivation
+    1.1 Finding Words for Intuitions
+    1.2 Two Ways to Read This Book
+    1.3 Exercises and Feedback
+  2 Linear Algebra
+    2.1 Systems of Linear Equations
+    2.2 Matrices
+    2.3 Solving Systems of Linear Equations
+    2.4 Vector Spaces
+    2.5 Linear Independence
+    2.6 Basis and Rank
+    2.7 Linear Mappings
+    2.8 Affine Spaces
+    2.9 Further Reading
+  Exercises
+  3 Analytic Geometry
+    3.1 Norms
+    3.2 Inner Products
+    3.3 Lengths and Distances
+    3.4 Angles and Orthogonality
+    3.5 Orthonormal Basis
+    3.6 Orthogonal Complement
+    3.7 Inner Product of Functions
+    3.8 Orthogonal Projections
+    3.9 Rotations
+    3.10 Further Reading
+  Exercises
+  4 Matrix Decompositions
+    4.1 Determinant and Trace
+    4.2 Eigenvalues and Eigenvectors
+    4.3 Cholesky Decomposition
+    4.4 Eigendecomposition and Diagonalization
+    4.5 Singular Value Decomposition
+    4.6 Matrix Approximation
+    4.7 Matrix Phylogeny
+    4.8 Further Reading
+  Exercises
+  5 Vector Calculus
+    5.1 Differentiation of Univariate Functions
+    5.2 Partial Differentiation and Gradients
+    5.3 Gradients of Vector-Valued Functions
+    5.4 Gradients of Matrices
+    5.5 Useful Identities for Computing Gradients
+    5.6 Backpropagation and Automatic Differentiation
+    5.7 Higher-Order Derivatives
+    5.8 Linearization and Multivariate Taylor Series
+    5.9 Further Reading
+  Exercises
+  6 Probability and Distributions
+    6.1 Construction of a Probability Space
+    6.2 Discrete and Continuous Probabilities
+    6.3 Sum Rule, Product Rule, and Bayes' Theorem
+    6.4 Summary Statistics and Independence
+    6.5 Gaussian Distribution
+    6.6 Conjugacy and the Exponential Family
+    6.7 Change of Variables/Inverse Transform
+    6.8 Further Reading
+  Exercises
+  7 Continuous Optimization
+    7.1 Optimization Using Gradient Descent
+    7.2 Constrained Optimization and Lagrange Multipliers
+    7.3 Convex Optimization
+    7.4 Further Reading
+  Exercises
+Part II Central Machine Learning Problems
+  8 When Models Meet Data
+    8.1 Data, Models, and Learning
+    8.2 Empirical Risk Minimization
+    8.3 Parameter Estimation
+    8.4 Probabilistic Modeling and Inference
+    8.5 Directed Graphical Models
+    8.6 Model Selection
+  9 Linear Regression
+    9.1 Problem Formulation
+    9.2 Parameter Estimation
+    9.3 Bayesian Linear Regression
+    9.4 Maximum Likelihood as Orthogonal Projection
+    9.5 Further Reading
+  10 Dimensionality Reduction with Principal Component Analysis
+    10.1 Problem Setting
+    10.2 Maximum Variance Perspective
+    10.3 Projection Perspective
+    10.4 Eigenvector Computation and Low-Rank Approximations
+    10.5 PCA in High Dimensions
+    10.6 Key Steps of PCA in Practice
+    10.7 Latent Variable Perspective
+    10.8 Further Reading
+  11 Density Estimation with Gaussian Mixture Models
+    11.1 Gaussian Mixture Model
+    11.2 Parameter Learning via Maximum Likelihood
+    11.3 EM Algorithm
+    11.4 Latent-Variable Perspective
+    11.5 Further Reading
+  12 Classification with Support Vector Machines
+    12.1 Separating Hyperplanes
+    12.2 Primal Support Vector Machine
+    12.3 Dual Support Vector Machine
+    12.4 Kernels
+    12.5 Numerical Solution
+    12.6 Further Reading
+  References
+
+Book Title: optimization-algorithms-meap-v02_compress
+Optimization Algorithms MEAP V02
+Copyright
+Welcome
+Brief contents
+Chapter 1: Introduction to Search and Optimization
+  1.1 Why care about search and optimization?
+  1.2 Going from toy problem to the real world
+  1.3 Basic ingredients of optimization problems
+    1.3.1 Decision Variables
+    1.3.2 Objective Functions
+    1.3.3 Constraints
+  1.4 Well-structured problems vs. Ill-structured problems
+    1.4.1 Well-structured problems (WSP)
+    1.4.2 Ill-structured Problems (ISP)
+    1.4.3 WSP but practically ISP
+  1.5 Search Algorithms and the Search Dilemma
+  1.6 Summary
+Chapter 2: A Deeper Look at Search and Optimization
+  2.1 Optimization Problem Classification
+    2.1.1 Number and Type of Decision Variables
+    2.1.2 Landscape and Number of Objective Functions
+    2.1.3 Constraints
+    2.1.4 Linearity of Objective Functions and Constraints
+    2.1.5 Expected Quality and Permissible Time of the Solution 
+  2.2 Search and Optimization Algorithm Classification
+  2.3 Heuristics and Meta-heuristics
+  2.4 Nature-inspired Algorithms
+  2.5 Exercises
+  2.6 Summary
+Chapter 3: Blind Search Algorithms
+  3.1 Introduction to Graphs
+  3.2 Graph Search
+  3.3 Graph Traversal Algorithms
+    3.3.1 Breadth-first Search (BFS)
+    3.3.2 Depth-first Search (DFS)
+  3.4 Shortest Path Algorithms
+    3.4.1 Dijkstra Search
+    3.4.2 Uniform-Cost Search (UCS)
+    3.4.3 Bi-directional Dijkstra Search
+  3.5 Applying Blind Search to Routing Problem
+  3.6 Exercises
+  3.7 Summary
+Appendix A: Search and Optimization Libraries in Python
+  A.1 Setting up the Python environment
+    A.1.1 Using a Python distribution
+    A.1.2 Installing Jupyter Notebook and JupyterLab 
+    A.1.3 Cloning book repository
+  A.2 Mathematical Programming Solvers
+    A.2.1 SciPy 
+    A.2.2 PuLP
+  A.3 Graph and Mapping Libraries
+    A.3.1 networkx
+    A.3.2 osmnx
+    A.3.3 GeoPandas
+    A.3.4 contextily
+    A.3.5 folium
+    A.3.6 Pyrosm
+    A.3.7 Other libraries and tools
+  A.4 Metaheuristics Optimization Libraries
+    A.4.1 PySwarms
+    A.4.2 Sckit-opt
+    A.4.3 networkx
+    A.4.4 Distributed Evolutionary Algorithms in Python (DEAP)
+    A.4.5 OR-Tools
+    A.4.6 Other Libraries
+  A.5 Machine Learning Libraries
+    A.5.1 Node2vec
+    A.5.2 DeepWalk
+    A.5.3 PyG
+    A.5.4 OpenAI Gym
+    A.5.5 Flow
+    A.5.6 Other libraries
